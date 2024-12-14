@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /markdown-examples
+      link: /shuoming
     - theme: alt
       text: 官方SDK
-      link: /api-examples
+      link: /webman
 
 features:
   - title: 问题 A

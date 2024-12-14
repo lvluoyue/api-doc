@@ -27,14 +27,14 @@ export default defineConfig({
     logo: "/logo.png",
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/markdown-examples' }
+      { text: '文档', link: '/shuoming' },
     ],
 
     sidebar: [
       {
-        text: '测试',
+        text: '落月API',
         items: [
-          { text: '测试1', link: '/markdown-examples' },
+          { text: '说明', link: '/shuoming' },
           { text: 'webman', link: '/webman' }
         ]
       }
