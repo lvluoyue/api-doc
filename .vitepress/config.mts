@@ -35,6 +35,7 @@ export default defineConfig({
         text: '落月API',
         items: [
           { text: '说明', link: '/shuoming' },
+          { text: 'QQ音乐', link: '/music' },
           { text: 'webman', link: '/webman' }
         ]
       }
