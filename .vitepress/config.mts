@@ -35,7 +35,7 @@ export default defineConfig({
         text: '测试',
         items: [
           { text: '测试1', link: '/markdown-examples' },
-          { text: '测试2', link: '/api-examples' }
+          { text: 'webman', link: '/webman' }
         ]
       }
     ],
