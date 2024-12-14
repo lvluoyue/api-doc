@@ -40,7 +40,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/lvluoyue/api-doc' }
     ],
 
     search: {
@@ -91,8 +91,9 @@ export default defineConfig({
     lastUpdated: {
       text: "最后更新于",
       formatOptions: {
-        dateStyle: "full", // full
+        dateStyle: "short", // full
         timeStyle: "medium", // medium
+        hourCycle: "h24"
       },
     },
 
@@ -105,6 +106,7 @@ export default defineConfig({
   },
   outDir: 'dist',
   srcDir: 'src',
+  base: '/api-doc/',
   vite: {
     server: {
       open: true

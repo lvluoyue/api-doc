@@ -29,6 +29,4 @@ features:
   import { useData } from 'vitepress'
 
   const { theme } = useData()
-
-  console.log('页面标题:', this.$frontmatter.title);
 </script>
