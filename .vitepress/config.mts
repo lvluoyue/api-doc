@@ -111,21 +111,17 @@ export default defineConfig({
   srcDir: 'src',
   base: '/api-doc/',
   vite: {
-    plugins: [
-      cdn({
-        modules: [
-          {
-            name: 'oh-my-live2d',
-            var: 'oh-my-live2d',
-            path: 'dist/index.min.js'
-          },
-          // {
-          //   name: 'vitepress',
-          //   path: 'dist/node/index.js'
-          // },
-        ]
-      }),
-    ],
+    // plugins: [
+    //   cdn({
+    //     modules: [
+    //       {
+    //         name: 'oh-my-live2d',
+    //         var: 'oh-my-live2d',
+    //         path: 'dist/index.min.js'
+    //       },
+    //     ]
+    //   }),
+    // ],
     server: {
       open: true
     },
