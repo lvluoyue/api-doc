@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import cdn from 'vite-plugin-cdn-import'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -110,6 +111,21 @@ export default defineConfig({
   srcDir: 'src',
   base: '/api-doc/',
   vite: {
+    plugins: [
+      cdn({
+        modules: [
+          {
+            name: 'oh-my-live2d',
+            var: 'oh-my-live2d',
+            path: 'dist/index.min.js'
+          },
+          // {
+          //   name: 'vitepress',
+          //   path: 'dist/node/index.js'
+          // },
+        ]
+      }),
+    ],
     server: {
       open: true
     },

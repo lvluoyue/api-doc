@@ -21,6 +21,14 @@ export default {
         dockedPosition: 'right',
         models: [
           {
+            path: 'https://model.oml2d.com/Pio/model.json',
+            "scale": 0.4,
+            "position": [0, 50],
+            "stageStyle": {
+              "height": 300
+            }
+          },
+          {
             path: './live2d/model/sagiri/sagiri.model.json'
           }
         ]
