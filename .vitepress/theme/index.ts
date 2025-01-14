@@ -11,7 +11,17 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+  async enhanceApp({ app, router, siteData }) {
+    // @ts-ignore
+    if (!import.meta.env.SSR) {
+      const { loadOml2d } = await import('oh-my-live2d');
+      loadOml2d({
+        models: [
+          {
+            path: './live2d/model/sagiri/sagiri.model.json'
+          }
+        ]
+      });
+    }
   }
 } satisfies Theme

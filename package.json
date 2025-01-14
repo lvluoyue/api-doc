@@ -14,5 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.5.0"
+  },
+  "dependencies": {
+    "oh-my-live2d": "^0.19.3"
   }
 }
