@@ -16,6 +16,9 @@ export default {
     if (!import.meta.env.SSR) {
       const { loadOml2d } = await import('oh-my-live2d');
       loadOml2d({
+        mobileDisplay: true,
+        initialStatus: 'active',
+        dockedPosition: 'right',
         models: [
           {
             path: './live2d/model/sagiri/sagiri.model.json'
