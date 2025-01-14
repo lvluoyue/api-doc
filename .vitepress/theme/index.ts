@@ -28,12 +28,17 @@ export default {
             //   // "height": 300
             //   width: 280
             // }
-            "scale": 0.15,
-            "position": [-50, 50],
+            scale: 0.13,
+            position: [-50, 50],
             "stageStyle": {
-              // "height": 300
-              width: 280
-            }
+              height: 400,
+              width: 200
+            },
+            mobilePosition: [-30, 0],
+            mobileStageStyle: {
+              height: 280,
+              width: 180
+            },
           },
           {
             path: 'https://model.oml2d.com/Pio/model.json',
