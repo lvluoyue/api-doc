@@ -10,11 +10,11 @@ hero:
     alt: 落月
   actions:
     - theme: brand
-      text: 快速开始
-      link: /shuoming
+      text: 开始使用
+      link: /v2/接口说明
     - theme: alt
-      text: 官方SDK
-      link: /webman
+      text: Github
+      link: https://github.com/lvluoyue/api-doc
 
 features:
   - title: 问题 A

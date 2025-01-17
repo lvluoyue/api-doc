@@ -30,8 +30,8 @@ export default {
             // }
             scale: 0.13,
             position: [-50, 50],
-            "stageStyle": {
-              height: 400,
+            stageStyle: {
+              height: 410,
               width: 200
             },
             mobilePosition: [-30, 0],
@@ -42,18 +42,18 @@ export default {
           },
           {
             path: 'https://model.oml2d.com/Pio/model.json',
-            "scale": 0.4,
-            "position": [0, 50],
-            "stageStyle": {
-              "height": 300
+            scale: 0.4,
+            position: [0, 50],
+            stageStyle: {
+              height: 300
             }
           },
           {
             path: 'https://model.oml2d.com/umaru/model.json',
-            "scale": 0.25,
+            scale: 0.25,
             // "position": [0, 70],
-            "stageStyle": {
-              "height": 300
+            stageStyle: {
+              height: 300
             }
           }
         ]
