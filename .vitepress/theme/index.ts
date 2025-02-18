@@ -2,6 +2,7 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import GiscusComment from './components/GiscusComment.vue';
 import './style.css'
 
 export default {
@@ -9,6 +10,7 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      'doc-after': () => h(GiscusComment),
     })
   },
   async enhanceApp({ app, router, siteData }) {
@@ -21,7 +23,7 @@ export default {
         dockedPosition: 'right',
         models: [
           {
-            path: 'https://model.oml2d.com/rem/model.json',
+            path: 'https://model.hacxy.cn/rem/model.json',
             // "scale": 0.15,
             // "position": [-100, -200],
             // "stageStyle": {
@@ -41,7 +43,7 @@ export default {
             },
           },
           {
-            path: 'https://model.oml2d.com/Pio/model.json',
+            path: 'https://model.hacxy.cn/Pio/model.json',
             scale: 0.4,
             position: [0, 50],
             stageStyle: {
@@ -49,7 +51,7 @@ export default {
             }
           },
           {
-            path: 'https://model.oml2d.com/umaru/model.json',
+            path: 'https://model.hacxy.cn/umaru/model.json',
             scale: 0.25,
             // "position": [0, 70],
             stageStyle: {

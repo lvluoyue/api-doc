@@ -1,9 +1,9 @@
-import { defineConfig } from 'vitepress'
-import cdn from 'vite-plugin-cdn-import'
-import { withSidebar } from 'vitepress-sidebar';
+import {defineConfig, type UserConfig} from 'vitepress'
+import {withSidebar, VitePressSidebarOptions} from 'vitepress-sidebar';
+import {withI18n} from 'vitepress-i18n';
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig(withSidebar({
+const vitePressConfig: UserConfig = {
   lang: 'zh-CN',
   title: "落月API",
   description: "介绍",
@@ -12,7 +12,7 @@ export default defineConfig(withSidebar({
       "link",
       {
         rel: "icon",
-        sizes:  "16x16",
+        sizes: "16x16",
         href: "/favicon-16x16.ico"
       }
     ],
@@ -28,15 +28,16 @@ export default defineConfig(withSidebar({
     // https://vitepress.dev/reference/default-theme-config
     logo: "/logo.png",
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/lvluoyue/api-doc' }
+      {icon: 'github', link: 'https://github.com/lvluoyue/api-doc'}
     ],
     nav: [
-      { text: '介绍', link: '/jieshao' },
+      {text: '介绍', link: '/jieshao'},
       {
         text: '版本',
         items: [
-          { text: 'v2', link: '/v2/接口说明' },
-          { text: 'v1', link: '/v1' },
+          // { text: 'v3', link: '/v3/接口说明' },
+          {text: 'v2', link: '/v2/接口说明'},
+          {text: 'v1', link: '/v1'},
         ]
       }
     ],
@@ -101,53 +102,62 @@ export default defineConfig(withSidebar({
     lightModeSwitchTitle: "切换到浅色模式",
     darkModeSwitchTitle: "切换到深色模式",
   },
+  editLink: {
+    pattern: 'https://github.com/lvluoyue/api-doc/edit/main/src/:path'
+  },
   outDir: 'dist',
   srcDir: 'src',
   base: '/api-doc/',
   vite: {
-    // plugins: [
-    //   cdn({
-    //     modules: [
-    //       {
-    //         name: 'oh-my-live2d',
-    //         var: 'oh-my-live2d',
-    //         path: 'dist/index.min.js'
-    //       },
-    //     ]
-    //   }),
-    // ],
-
-  //   plugins: [
-  //     AutoNav({
-  //       pattern: ["**/!(README|TODO).md"], // 也可以在这里排除不展示的文件，例如不匹配 README 和 TODO 文件
-  //       settings: {
-  //         v2: { hide: true,collapsed: true, useArticleTitle: false }, // 文件夹折叠配置
-  //       },
-  //       compareFn: (a, b) => {
-  //         // 按最新提交时间(没有提交记录时为本地文件修改时间)升序排列
-  //         return (b.options.lastCommitTime || b.options.modifyTime) - (a.options.lastCommitTime || a.options.modifyTime)
-  //       },
-  //       useArticleTitle: true // 全局开启使用文章一级标题作为文章名称
-  //   }),
-  // ],
+    plugins: [],
     server: {
       open: true
     },
     // https://cn.vitejs.dev/config/shared-options.html#publicdir
     publicDir: "../public", // 指定 public 目录路径
   },
-}, [{
-  documentRootPath: "/src",
-  scanStartPath: 'v2',
-  resolvePath: '/v2/',
-  collapsed: false,
-  useTitleFromFileHeading: true,
-  useTitleFromFrontmatter: true,
-}, {
-  documentRootPath: "/src",
-  scanStartPath: 'v1',
-  resolvePath: '/v1/',
-  collapsed: false,
-  useTitleFromFileHeading: true,
-  useTitleFromFrontmatter: true,
-}]))
+};
+
+const vitePressSidebarConfig: VitePressSidebarOptions = [
+  {
+    documentRootPath: "/src",
+    scanStartPath: 'v3',
+    resolvePath: '/v3/',
+    collapsed: false,
+    useTitleFromFileHeading: true,
+    useTitleFromFrontmatter: true,
+    sortMenusOrderNumericallyFromTitle: true,
+    includeRootIndexFile: true,
+    manualSortFileNameByPriority: []
+  },
+  {
+    documentRootPath: "/src",
+    scanStartPath: 'v2',
+    resolvePath: '/v2/',
+    collapsed: false,
+    useTitleFromFileHeading: true,
+    useTitleFromFrontmatter: true,
+    sortMenusOrderNumericallyFromTitle: true,
+    includeRootIndexFile: true,
+    manualSortFileNameByPriority: ['指南', 'index.md']
+  },
+  {
+    documentRootPath: "/src",
+    scanStartPath: 'v1',
+    resolvePath: '/v1/',
+    collapsed: false,
+    useTitleFromFileHeading: true,
+    useTitleFromFrontmatter: true,
+    sortMenusOrderNumericallyFromTitle: true,
+    includeRootIndexFile: true,
+    manualSortFileNameByPriority: []
+  }
+];
+
+const vitePressI18nConfig = {
+  // VitePress I18n config
+  locales: ['zhHans'], // first locale 'en' is root locale  //, 'en', 'ko'
+  searchProvider: 'local' // enable search with auto translation
+};
+
+export default defineConfig(withSidebar(withI18n(vitePressConfig, vitePressI18nConfig), vitePressSidebarConfig))

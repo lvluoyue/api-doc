@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /v2/接口说明
+      link: /v2
     - theme: alt
       text: Github
       link: https://github.com/lvluoyue/api-doc
@@ -24,9 +24,3 @@ features:
   - title: 问题 C
     details: 文本 C
 ---
-
-<script setup>
-  import { useData } from 'vitepress';
-
-  const { theme } = useData()
-</script>
