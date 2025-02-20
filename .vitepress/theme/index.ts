@@ -2,17 +2,11 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import GiscusComment from './components/GiscusComment.vue';
-import './style.css'
+import Layout from './layout/index.vue';
 
 export default {
   extends: DefaultTheme,
-  Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      'doc-after': () => h(GiscusComment),
-    })
-  },
+  Layout,
   async enhanceApp({ app, router, siteData }) {
     // @ts-ignore
     if (!import.meta.env.SSR) {
