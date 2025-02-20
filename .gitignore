@@ -3,3 +3,4 @@
 /yarn.lock
 /.vitepress/cache/
 /.idea
+/.cache

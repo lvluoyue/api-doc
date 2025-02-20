@@ -107,6 +107,7 @@ const vitePressConfig: UserConfig = {
   },
   outDir: 'dist',
   srcDir: 'src',
+  cacheDir: '.cache',
   base: '/api-doc/',
   vite: {
     plugins: [],
