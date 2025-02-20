@@ -2,6 +2,8 @@ import {defineConfig, type UserConfig} from 'vitepress'
 import {withSidebar, VitePressSidebarOptions} from 'vitepress-sidebar';
 import {withI18n} from 'vitepress-i18n';
 
+const basePath = '/api-doc/'
+
 // https://vitepress.dev/reference/site-config
 const vitePressConfig: UserConfig = {
   lang: 'zh-CN',
@@ -13,14 +15,14 @@ const vitePressConfig: UserConfig = {
       {
         rel: "icon",
         sizes: "16x16",
-        href: "/favicon-16x16.ico"
+        href: basePath + "/favicon-16x16.ico"
       }
     ],
     [
       "link",
       {
         rel: "shortcut icon",
-        href: "/favicon-16x16.ico"
+        href: basePath + "/favicon-16x16.ico"
       }
     ],
   ],
@@ -108,7 +110,7 @@ const vitePressConfig: UserConfig = {
   outDir: 'dist',
   srcDir: 'src',
   cacheDir: '.cache',
-  base: '/api-doc/',
+  base: basePath,
   vite: {
     plugins: [],
     server: {
