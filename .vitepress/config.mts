@@ -35,8 +35,8 @@ const vitePressConfig: UserConfig = {
       {
         text: '版本',
         items: [
-          {text: 'v3', link: '/v3/接口说明'},
-          {text: 'v2', link: '/v2/接口说明'},
+          {text: 'v3', link: '/v3'},
+          {text: 'v2', link: '/v2'},
           {text: 'v1', link: '/v1'},
         ]
       }
@@ -139,7 +139,7 @@ const vitePressSidebarConfig: VitePressSidebarOptions = [
     useTitleFromFrontmatter: true,
     sortMenusOrderNumericallyFromLink: true,
     includeRootIndexFile: true,
-    manualSortFileNameByPriority: ['指南', 'index.md']
+    manualSortFileNameByPriority: ['指南', '音乐模块', 'index.md']
   },
   {
     documentRootPath: "/src",
