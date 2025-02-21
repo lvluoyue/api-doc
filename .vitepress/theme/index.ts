@@ -42,7 +42,7 @@ export default {
           },
           {
             name: '初音未来',
-            path: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/miku/miku.model.json',
+            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/miku/miku.model.json',
             volume: 1,
             scale: 0.28,
             position: [0, 75],
@@ -59,7 +59,7 @@ export default {
           },
           {
             name: '御坂美琴',
-            path: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/mikoto/mikoto.model.json',
+            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/mikoto/mikoto.model.json',
             volume: 1,
             scale: 0.26,
             position: [-50, 10],
@@ -76,7 +76,7 @@ export default {
           },
           {
             name: '白井黑子',
-            path: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/kuroko/kuroko.model.json',
+            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/kuroko/kuroko.model.json',
             volume: 1,
             scale: 0.26,
             position: [-50, 10],
@@ -93,7 +93,7 @@ export default {
           },
           {
             name: '佐天泪子',
-            path: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/saten/saten.model.json',
+            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/saten/saten.model.json',
             volume: 1,
             scale: 0.26,
             position: [-50, 10],
@@ -110,7 +110,7 @@ export default {
           },
           {
             name: '初春饰利',
-            path: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/uiharu/uiharu.model.json',
+            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/uiharu/uiharu.model.json',
             volume: 1,
             scale: 0.26,
             position: [-50, 10],
