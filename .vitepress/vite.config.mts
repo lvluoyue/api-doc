@@ -12,4 +12,7 @@ export default defineConfig({
   },
   // https://cn.vitejs.dev/config/shared-options.html#publicdir
   publicDir: "../public", // 指定 public 目录路径
+  build: {
+    chunkSizeWarningLimit: 10000 // 设置为 1 MB
+  }
 });
