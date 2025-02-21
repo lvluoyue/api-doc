@@ -3,6 +3,7 @@ import {withSidebar, VitePressSidebarOptions} from 'vitepress-sidebar';
 import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
 import {groupIconMdPlugin} from 'vitepress-plugin-group-icons'
 import {withI18n} from 'vitepress-i18n';
+import path from 'path'
 
 const basePath = '/api-doc/'
 
@@ -129,7 +130,7 @@ const vitePressConfig: UserConfig = {
   cacheDir: '.cache',
   base: basePath,
   vite: {
-    configFile: 'vite.config.mts'
+    configFile: __dirname + '/vite.config.mts'
   },
 };
 

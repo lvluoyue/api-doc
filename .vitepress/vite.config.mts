@@ -4,7 +4,7 @@ import {groupIconVitePlugin, localIconLoader} from 'vitepress-plugin-group-icons
 export default defineConfig({
   plugins: [groupIconVitePlugin({
     customIcon: {
-      json: localIconLoader(import.meta.url, 'public/svg/json.svg')
+      json: localIconLoader(import.meta.url, '../public/svg/json.svg')
     },
   })],
   server: {
