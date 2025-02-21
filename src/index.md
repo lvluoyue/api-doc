@@ -17,10 +17,12 @@ hero:
       link: https://github.com/lvluoyue/api-doc
 
 features:
-  - title: 问题 A
-    details: 文本 A
-  - title: 问题 B
-    details: 文本 B
-  - title: 问题 C
-    details: 文本 C
+  - title: 高效性
+    details: 落月API使用了协程等技术，确保在高并发场景下提供高效且高质量的服务。
+  - title: 稳定性
+    details: 项目采用了接口参数校验、异常处理、日志等技术，确保接口的稳定性和高质量。
+  - title: 便捷性
+    details: 落月API设计简洁易用，提供了详细的文档，帮助开发者快速上手并集成到自己的项目中。
+  - title: 高质量
+    details: 项目严格遵循高质量编码规范，确保代码的可维护性和可读性。
 ---
