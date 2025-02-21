@@ -1,5 +1,7 @@
 import {defineConfig, type UserConfig} from 'vitepress'
 import {withSidebar, VitePressSidebarOptions} from 'vitepress-sidebar';
+import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
+import {groupIconMdPlugin} from 'vitepress-plugin-group-icons'
 import {withI18n} from 'vitepress-i18n';
 
 const basePath = '/api-doc/'
@@ -26,11 +28,24 @@ const vitePressConfig: UserConfig = {
       }
     ],
   ],
+  markdown: {
+    image: {
+      lazyLoading: true
+    },
+    config(md) {
+      md.use(groupIconMdPlugin)
+    },
+    codeTransformers: [
+      transformerTwoslash()
+    ],
+    languages: ['js', 'jsx', 'ts', 'tsx']
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/logo.png",
     socialLinks: [
-      {icon: 'github', link: 'https://github.com/lvluoyue/api-doc'}
+      {icon: 'github', link: 'https://github.com/lvluoyue/api-doc'},
+      {icon: 'qq', link: 'https://github.com/lvluoyue/api-doc'},
     ],
     nav: [
       {text: '介绍', link: '/jieshao'},
@@ -112,12 +127,7 @@ const vitePressConfig: UserConfig = {
   cacheDir: '.cache',
   base: basePath,
   vite: {
-    plugins: [],
-    server: {
-      open: true
-    },
-    // https://cn.vitejs.dev/config/shared-options.html#publicdir
-    publicDir: "../public", // 指定 public 目录路径
+    configFile: './vite.config.ts'
   },
 };
 

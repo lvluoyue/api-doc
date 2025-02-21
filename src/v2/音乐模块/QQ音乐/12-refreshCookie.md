@@ -17,18 +17,18 @@
 
 ## 请求参数
 
-|参数名 |是否必选|数据类型|说明 |
-| ------------ | ------------ |
-| uin    | 是  | int    | 你的QQ号    |
-| musickey | 是 | string | 带有Q_H_L&#95;或W_X&#95;的字符串    |
-| refresh_key | 否  | string  | CK刷新key，已失效cookie带上这个刷新  |
-| refresh_token  | 否  | string  | CK刷新令牌，已失效cookie带上这个刷新  |
+|       参数名       |  是否必选  |   数据类型   | 说明                         |
+|:---------------:|:------:|:--------:|:---------------------------|
+|       uin       |   是    |   int    | 你的QQ号                      |
+|    musickey     |   是    |  string  | 带有Q_H_L&#95;或W_X&#95;的字符串  |
+|   refresh_key   |   否    |  string  | CK刷新key，已失效cookie带上这个刷新    |
+|  refresh_token  |   否    |  string  | CK刷新令牌，已失效cookie带上这个刷新     |
 
 ## 关于uin和musickey
-|music值|uin值|说明|
-|:----  |:---  |:----- |
-| Q_H_L&#95; |6-11位  | QQ账号ck |
-| W_X&#95; |最大19位  | 微信账号ck |
+| music值     | uin值  | 说明     |
+|:-----------|:------|:-------|
+| Q_H_L&#95; | 6-11位 | QQ账号ck |
+| W_X&#95;   | 最大19位 | 微信账号ck |
 
 ## 返回示例
 ```

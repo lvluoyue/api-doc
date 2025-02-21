@@ -13,9 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@shikijs/vitepress-twoslash": "^3.0.0",
     "nprogress-v2": "^1.1.10",
     "vitepress": "^1.6.3",
     "vitepress-i18n": "^1.3.1",
+    "vitepress-plugin-group-icons": "^1.3.6",
     "vitepress-sidebar": "^1.31.0"
   },
   "dependencies": {
