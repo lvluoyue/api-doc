@@ -33,7 +33,9 @@ const vitePressConfig: UserConfig = {
       lazyLoading: true
     },
     config(md) {
-      md.use(groupIconMdPlugin)
+      md.use(groupIconMdPlugin, {
+        titleBar: { includeSnippet: true },
+      })
     },
     codeTransformers: [
       transformerTwoslash()
@@ -127,7 +129,7 @@ const vitePressConfig: UserConfig = {
   cacheDir: '.cache',
   base: basePath,
   vite: {
-    configFile: './vite.config.ts'
+    configFile: 'vite.config.mts'
   },
 };
 

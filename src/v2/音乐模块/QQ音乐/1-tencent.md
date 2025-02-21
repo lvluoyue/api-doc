@@ -77,7 +77,7 @@
 ## 返回示例
 ::: code-group
 
-``` json [搜索模式]
+``` json [搜索模式.json]
 {
     "code": 200,
     "message": "请求成功！",
@@ -122,7 +122,7 @@
 }
 ```
 
-``` json [点歌模式]
+``` json [点歌模式.json]
 {
     "code": 200,
     "message": "请求成功！",
