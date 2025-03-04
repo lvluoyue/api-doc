@@ -1,5 +1,6 @@
 <script setup>
 import { useRoute, useData, useRouter, inBrowser } from 'vitepress';
+import RegisterSW from "./RegisterSW.vue";
 import DefaultTheme from 'vitepress/theme'
 import useSpendTime from '../hooks/useSpendTime'
 import useThemeTransition from '../hooks/useThemeTransition'
@@ -60,6 +61,9 @@ if (inBrowser) {
             :key="route.path"
         ></Giscus>
       </div>
+    </template>
+    <template #layout-bottom>
+      <RegisterSW />
     </template>
   </DefaultTheme.Layout>
 </template>

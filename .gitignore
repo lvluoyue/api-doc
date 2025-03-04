@@ -4,3 +4,4 @@
 /.vitepress/cache/
 /.idea
 /.cache
+/src/dist/
