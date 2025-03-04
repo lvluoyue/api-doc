@@ -3,7 +3,6 @@
 当前文档为v2版本，v1版本长时间不维护bug较多所以不再维护。  
 v2版本相对于v1版本进行了一定的优化，主要围绕性能以及功能上的优化，后面会介绍。  
 为了更好的提供api服务，我在2024-06-10正式决定与小杰合作开发。  
-doc前端使用ShowDoc项目（https://github.com/star7th/showdoc)  
 api后端使用webman框架(https://www.workerman.net)
 
 ## 关于域名

@@ -6,7 +6,7 @@ hero:
   name: "落月API"
   text: "为开发者提供高效、稳定、便捷的接口"
   image:
-    src: /logo.png
+    src: /images/pwa-512x512.png
     alt: 落月
   actions:
     - theme: brand

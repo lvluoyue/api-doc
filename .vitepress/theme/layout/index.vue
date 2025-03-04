@@ -12,18 +12,24 @@ const { text, textStyle, colorStyle } = useSpendTime()
 
 useThemeTransition()
 
-import { NProgress } from 'nprogress-v2' // 进度条组件
-import 'nprogress-v2/dist/index.css' // 进度条样式
+import { BProgress } from '@bprogress/core' // 进度条组件
+import '@bprogress/core/css' // 进度条样式
 
 const router = useRouter();
 
 if (inBrowser) {
-  NProgress.configure({ showSpinner: false })
+  BProgress.configure({
+    easing: "ease-in-out",
+    showSpinner: false,
+    speed: 200,
+    trickleSpeed: 200,
+    positionUsing: "width"
+  })
   router.onBeforeRouteChange = () => {
-    NProgress.start() // 开始进度条
+    BProgress.start() // 开始进度条
   }
   router.onAfterRouteChange = () => {
-    NProgress.done() // 停止进度条
+    BProgress.done() // 停止进度条
   }
 }
 </script>
