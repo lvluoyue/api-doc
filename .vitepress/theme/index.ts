@@ -54,7 +54,7 @@ export default {
             mobilePosition: [0, 95],
             mobileStageStyle: {
               height: 315,
-              width: 150
+              width: 160
             },
           },
           {

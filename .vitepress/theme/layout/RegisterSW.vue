@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { onBeforeMount, ref } from 'vue'
-// ts-ignore
-import { registerSW } from 'virtual:pwa-register'
 
 const offlineReady = ref(false)
 function onOfflineReady() {
@@ -12,7 +10,8 @@ async function close() {
 }
 
 onBeforeMount(async () => {
-  // const { registerSW } = await import('virtual:pwa-register')
+  // ts-ignore
+  const { registerSW } = await import('virtual:pwa-register')
   registerSW({
     immediate: true,
     onOfflineReady,
