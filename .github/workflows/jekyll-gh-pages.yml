@@ -28,10 +28,10 @@ jobs:
           cache: npm # 启用 npm 依赖缓存
 
       - name: Install dependencies
-        run: npm install
+        run: yarn
 
       - name: Build VitePress
-        run: npm run build # 确保 package.json 中有 "build": "vitepress build"
+        run: yarn run build # 确保 package.json 中有 "build": "vitepress build"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
