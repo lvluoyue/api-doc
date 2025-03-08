@@ -19,4 +19,4 @@
 - 使用swoole的redis，mysql等连接池。
 - 使用GlobalData组件，实现进程间数据共享。
 - 使用自研框架（仿springboot）。
-- 使用自动化部署方案。（暂未加入）
+- 使用自动化部署方案。
