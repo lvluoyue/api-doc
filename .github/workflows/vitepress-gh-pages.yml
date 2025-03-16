@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20 # 推荐使用 LTS 版本（如 18.x 或 20.x）
-          cache: npm # 启用 npm 依赖缓存
+          cache: yarn # 启用 npm 依赖缓存
 
       - name: Install dependencies
         run: yarn
