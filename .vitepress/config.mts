@@ -156,7 +156,7 @@ const vitePressConfig: UserConfig = {
     registerType: "autoUpdate", // 注册类型为自动更新
     includeManifestIcons: false, // 不包含清单图标
     manifest: {
-      id: basePath, // 清单 ID
+      id: 1, // 清单 ID
       name: title, // 应用名称
       short_name: title, // 应用的短名称
       description: description, // 应用的描述
@@ -184,12 +184,12 @@ const vitePressConfig: UserConfig = {
       globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2,moc,json}"], // 匹配需要缓存的文件类型
       runtimeCaching: [
         {
-          urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i, // 匹配需要缓存的 Google 字体
+          urlPattern: /^https:\/\/model.hacxy.cn\/.*/i, // 匹配需要缓存的 Google 字体
           handler: "CacheFirst", // 缓存优先策略
           options: {
-            cacheName: "google-fonts-cache", // 缓存名称
+            cacheName: "live2d-model-hacxy", // 缓存名称
             expiration: {
-              maxEntries: 10, // 最大缓存条目数
+              maxEntries: 50, // 最大缓存条目数
               maxAgeSeconds: 60 * 60 * 24 * 365, // 缓存有效期，365天
             },
             cacheableResponse: {

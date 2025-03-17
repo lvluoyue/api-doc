@@ -11,7 +11,8 @@
     "types": [
       "node",
       "vite-plugin-pwa/vanillajs",
-      "vite-plugin-pwa/info"
+      "vite-plugin-pwa/info",
+      "vite-plugin-pwa/client"
     ]
   },
   "include": ["src/**/*.ts", "**/*.d.ts", "src/**/*.vue", "src/**/*.json"]
