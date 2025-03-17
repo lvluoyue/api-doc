@@ -184,7 +184,7 @@ const vitePressConfig: UserConfig = {
       globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2,moc,json}"], // 匹配需要缓存的文件类型
       runtimeCaching: [
         {
-          urlPattern: /^https:\/\/model.hacxy.cn\/.*/i, // 匹配需要缓存的 Google 字体
+          urlPattern: /^https:\/\/model\.hacxy\.cn\/.*/i, // 匹配需要缓存的 Google 字体
           handler: "CacheFirst", // 缓存优先策略
           options: {
             cacheName: "live2d-model-hacxy", // 缓存名称
@@ -198,13 +198,13 @@ const vitePressConfig: UserConfig = {
           },
         },
         {
-          urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i, // 匹配需要缓存的 Google 字体
+          urlPattern: /^https:\/\/giscus\.app\/.*/i, // 匹配需要缓存的 Google 字体
           handler: "CacheFirst", // 缓存优先策略
           options: {
-            cacheName: "gstatic-fonts-cache", // 缓存名称
+            cacheName: "giscus", // 缓存名称
             expiration: {
-              maxEntries: 10, // 最大缓存条目数
-              maxAgeSeconds: 60 * 60 * 24 * 365, // 缓存有效期，365天
+              maxEntries: 50, // 最大缓存条目数
+              maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存有效期，7天
             },
             cacheableResponse: {
               statuses: [0, 200], // 缓存的响应状态码
