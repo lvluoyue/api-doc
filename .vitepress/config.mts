@@ -158,6 +158,7 @@ const vitePressConfig = (env): UserConfig => {
       outDir: "../dist", // 输出目录
       registerType: "autoUpdate", // 注册类型为自动更新
       includeManifestIcons: false, // 不包含清单图标
+      display: "fullscreen",
       manifest: {
         id: "1", // 清单 ID
         name: title, // 应用名称
@@ -167,14 +168,10 @@ const vitePressConfig = (env): UserConfig => {
         version: "1.0.0",
         icons: [
           {
-            src: "./images/pwa-120x120.png", // 图标路径
-            sizes: "120x120", // 图标尺寸
+            src: "./images/pwa-192x192.png", // 图标路径
+            sizes: "192x192", // 图标尺寸
             type: "image/png", // 图标类型
-          },
-          {
-            src: "./images/pwa-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
+            purpose: "any",
           },
           {
             src: "./images/pwa-512x512.png",
