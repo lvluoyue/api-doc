@@ -20,14 +20,14 @@ const vitePressConfig: UserConfig = {
       {
         rel: "icon",
         sizes: "16x16",
-        href: "./favicon-16x16.ico"
+        href: basePath + "favicon-16x16.ico"
       }
     ],
     [
       "link",
       {
         rel: "shortcut icon",
-        href: "./favicon-16x16.ico"
+        href: basePath + "favicon-16x16.ico"
       }
     ],
   ],
@@ -181,7 +181,7 @@ const vitePressConfig: UserConfig = {
       ],
     },
     workbox: {
-      globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2,moc}"], // 匹配需要缓存的文件类型
+      globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2,moc,json}"], // 匹配需要缓存的文件类型
       runtimeCaching: [
         {
           urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i, // 匹配需要缓存的 Google 字体
