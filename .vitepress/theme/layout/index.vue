@@ -7,7 +7,6 @@ import useThemeTransition from '../hooks/useThemeTransition'
 import Giscus from "@giscus/vue";
 import '../style.css'
 
-console.log(import.meta.env.MODE)
 const route = useRoute();
 const { isDark } = useData();
 const { text, textStyle, colorStyle } = useSpendTime()

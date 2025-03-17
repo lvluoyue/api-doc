@@ -2,21 +2,30 @@
 import { onBeforeMount, ref } from 'vue'
 
 const offlineReady = ref(false)
+const needRefresh = ref(false)
+
+let updateServiceWorker: (() => Promise<void>) | undefined
+
 function onOfflineReady() {
   offlineReady.value = true
 }
+function onNeedRefresh() {
+  needRefresh.value = true
+}
 async function close() {
   offlineReady.value = false
+  needRefresh.value = false
 }
 
 const intervalMS = 60 * 60 * 1000;
 
 onBeforeMount(async () => {
-  // ts-ignore
   const { registerSW } = await import('virtual:pwa-register')
-  registerSW({
+  updateServiceWorker = registerSW({
     immediate: true,
-    onOfflineReady,  onRegisteredSW(swUrl, r) {
+    onOfflineReady,
+    onNeedRefresh,
+    onRegisteredSW(swUrl, r) {
       r &&
       setInterval(async () => {
         if (r.installing || !navigator) return;
@@ -34,7 +43,7 @@ onBeforeMount(async () => {
         if (resp?.status === 200) await r.update();
       }, intervalMS);
     },
-    onRegisterError(e: any) {
+    onRegisterError(e) {
       console.error('Service Worker registration error!', e)
     },
   })
@@ -42,15 +51,23 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-  <template v-if="offlineReady">
+  <template v-if="offlineReady || needRefresh">
     <div
         class="pwa-toast"
         role="alertdialog"
         aria-labelledby="pwa-message"
     >
       <div id="pwa-message" class="mb-3">
-        App ready to work offline
+        {{ offlineReady ? 'App ready to work offline' : 'New content available, click the reload button to update.' }}
       </div>
+      <button
+          v-if="needRefresh"
+          type="button"
+          class="pwa-refresh"
+          @click="updateServiceWorker?.()"
+      >
+        Reload
+      </button>
       <button
           type="button"
           class="pwa-cancel"

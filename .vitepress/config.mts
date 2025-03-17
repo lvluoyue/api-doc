@@ -12,7 +12,7 @@ const description = "介绍";
 
 
 // https://vitepress.dev/reference/site-config
-const vitePressConfig: UserConfig = (env) => {
+const vitePressConfig = (env): UserConfig => {
   return {
     lang: 'zh-CN',
     title: title,
@@ -159,11 +159,12 @@ const vitePressConfig: UserConfig = (env) => {
       registerType: "autoUpdate", // 注册类型为自动更新
       includeManifestIcons: false, // 不包含清单图标
       manifest: {
-        id: 1, // 清单 ID
+        id: "1", // 清单 ID
         name: title, // 应用名称
         short_name: title, // 应用的短名称
         description: description, // 应用的描述
         theme_color: "#ffffff", // 主题颜色
+        version: "1.0.0",
         icons: [
           {
             src: "./images/pwa-120x120.png", // 图标路径
