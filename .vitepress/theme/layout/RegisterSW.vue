@@ -9,14 +9,30 @@ async function close() {
   offlineReady.value = false
 }
 
+const intervalMS = 60 * 60 * 1000;
+
 onBeforeMount(async () => {
   // ts-ignore
   const { registerSW } = await import('virtual:pwa-register')
   registerSW({
     immediate: true,
-    onOfflineReady,
-    onRegistered() {
-      console.info('Service Worker registered')
+    onOfflineReady,  onRegisteredSW(swUrl, r) {
+      r &&
+      setInterval(async () => {
+        if (r.installing || !navigator) return;
+
+        if ('connection' in navigator && !navigator.onLine) return;
+
+        const resp = await fetch(swUrl, {
+          cache: 'no-store',
+          headers: {
+            cache: 'no-store',
+            'cache-control': 'no-cache',
+          },
+        });
+
+        if (resp?.status === 200) await r.update();
+      }, intervalMS);
     },
     onRegisterError(e: any) {
       console.error('Service Worker registration error!', e)
