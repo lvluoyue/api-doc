@@ -156,7 +156,7 @@ const vitePressConfig: UserConfig = {
     registerType: "autoUpdate", // 注册类型为自动更新
     includeManifestIcons: false, // 不包含清单图标
     manifest: {
-      id: "/", // 清单 ID
+      id: basePath, // 清单 ID
       name: title, // 应用名称
       short_name: title, // 应用的短名称
       description: description, // 应用的描述
