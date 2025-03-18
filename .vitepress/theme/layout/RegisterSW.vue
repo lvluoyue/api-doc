@@ -4,10 +4,7 @@ import { onBeforeMount, ref } from 'vue'
 const offlineReady = ref(false)
 const needRefresh = ref(false)
 
-let updateServiceWorker: () => Promise<void> = () => {
-  console.warn('No SW registered.')
-  return Promise.resolve()
-}
+let updateServiceWorker: (() => Promise<void>) | undefined
 
 function onOfflineReady() {
   offlineReady.value = true
