@@ -1,4 +1,4 @@
-# QQ账号歌单API
+# QQ账号歌单API <Badge type="tip" text="V2" />
 
 ## 简要描述
 

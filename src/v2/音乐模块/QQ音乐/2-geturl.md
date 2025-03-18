@@ -1,4 +1,4 @@
-# 获取播放链接API
+# 获取播放链接API <Badge type="tip" text="V2" />
 
 ## 简要描述
 

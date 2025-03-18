@@ -1,4 +1,4 @@
-# 歌手专辑列表API
+# 歌手专辑列表API <Badge type="tip" text="V2" />
 
 ## 简要描述
 

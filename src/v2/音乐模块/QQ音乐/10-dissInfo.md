@@ -1,4 +1,4 @@
-# 获取歌单的歌曲列表API
+# 获取歌单的歌曲列表API <Badge type="tip" text="V2" />
 
 ## 简要描述
 

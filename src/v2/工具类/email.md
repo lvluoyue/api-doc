@@ -1,4 +1,4 @@
-# 发送邮件API
+# 发送邮件API <Badge type="tip" text="V2" />
 
 ## 简要描述
 

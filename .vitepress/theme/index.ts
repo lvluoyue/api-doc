@@ -1,5 +1,6 @@
 // https://vitepress.dev/guide/custom-theme
-
+import giscusTalk from 'vitepress-plugin-comment-with-giscus';
+import {useData, useRoute} from 'vitepress';
 import type {Theme} from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Layout from './layout/index.vue';
@@ -7,7 +8,30 @@ import 'virtual:group-icons.css'
 
 export default {
   extends: DefaultTheme,
-  Layout,
+  Layout, setup() {
+    // Get frontmatter and route
+    const {frontmatter} = useData();
+    const route = useRoute();
+    // giscus配置
+    giscusTalk({
+        repo: 'lvluoyue/api-doc', //仓库
+        repoId: 'R_kgDONdDcpg', //仓库ID
+        category: 'Announcements', // 讨论分类
+        categoryId: 'DIC_kwDONdDcps4CnEHS', //讨论分类ID
+        mapping: 'title',
+        inputPosition: 'bottom',
+        loading: 'lazy',
+        lang: 'zh-CN',
+      },
+      {
+        frontmatter, route
+      },
+      //默认值为true，表示已启用，此参数可以忽略；
+      //如果为false，则表示未启用
+      //您可以使用“comment:true”序言在页面上单独启用它
+      true
+    );
+  },
   async enhanceApp({app, router, siteData}) {
     // @ts-ignore
     if (!import.meta.env.SSR) {
@@ -19,7 +43,7 @@ export default {
         models: [
           {
             name: '雷姆',
-            path: 'https://model.hacxy.cn/rem/model.json',
+            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/imuncle/live2d/refs/heads/master/model/rem/model.json',//https://model.hacxy.cn/rem/model.json
             volume: 1,
             // "scale": 0.15,
             // "position": [-100, -200],

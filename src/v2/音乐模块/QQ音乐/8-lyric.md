@@ -1,4 +1,4 @@
-# 歌词API
+# 歌词API <Badge type="tip" text="V2" />
 
 ## 简要描述
 - 获取歌曲的歌词，此API包含lyric歌词、逐字歌词、翻译歌词、音译歌词。

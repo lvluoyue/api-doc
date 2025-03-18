@@ -1,4 +1,4 @@
-# 歌词API
+# 歌词API <Badge type="tip" text="V2" />
 
 ## 简要描述
 

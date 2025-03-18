@@ -4,6 +4,7 @@ import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
 import {groupIconMdPlugin} from 'vitepress-plugin-group-icons'
 import {withI18n} from 'vitepress-i18n';
 import {withPwa} from "@vite-pwa/vitepress";
+import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
 import {loadEnv, ConfigEnv} from "vite";
 
 const basePath = '/api-doc/'
@@ -48,8 +49,9 @@ const vitePressConfig = (env): UserConfig => {
       lineNumbers: true,
       config(md) {
         md.use(groupIconMdPlugin, {
-          titleBar: { includeSnippet: true },
+          titleBar: {includeSnippet: true},
         })
+          .use(markdownItTaskCheckbox)
       },
       codeTransformers: [
         transformerTwoslash()
@@ -215,13 +217,13 @@ const vitePressConfig = (env): UserConfig => {
             },
           },
           {
-            urlPattern: /^https:\/\/cdn\.jsdelivr\.net\/.*/i, // 匹配需要缓存的 jsdelivr 图片
+            urlPattern: /^https:\/\/gh-proxy\.com\/.*/i, // 匹配需要缓存的 gh-proxy 图片
             handler: "NetworkFirst", // 网络优先策略
             options: {
-              cacheName: "jsdelivr-images-cache", // 缓存名称
+              cacheName: "gh-proxy", // 缓存名称
               expiration: {
-                maxEntries: 10, // 最大缓存条目数
-                maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存有效期，7天
+                maxEntries: 50, // 最大缓存条目数
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 缓存有效期，365天
               },
               cacheableResponse: {
                 statuses: [0, 200], // 缓存的响应状态码
@@ -280,7 +282,7 @@ const vitePressI18nConfig = () => {
   };
 }
 
-export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
+export default defineConfig(({mode}: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd());
   return withPwa(withSidebar(withI18n(vitePressConfig(env), vitePressI18nConfig(env)), vitePressSidebarConfig(env)))
 })

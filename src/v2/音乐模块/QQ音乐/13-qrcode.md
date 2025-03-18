@@ -1,4 +1,4 @@
-# 扫码获取cookie
+# 扫码获取cookie <Badge type="tip" text="V2" />
 
 ## 简要描述
 

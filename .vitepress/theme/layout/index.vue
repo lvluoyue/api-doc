@@ -4,7 +4,6 @@ import RegisterSW from "./RegisterSW.vue";
 import DefaultTheme from 'vitepress/theme'
 import useSpendTime from '../hooks/useSpendTime'
 import useThemeTransition from '../hooks/useThemeTransition'
-import Giscus from "@giscus/vue";
 import '../style.css'
 
 const route = useRoute();
@@ -42,25 +41,6 @@ if (inBrowser) {
         ⏰
         <span :style="colorStyle">{{ text }}</span>
       </span>
-    </template>
-    <template #doc-after>
-      <div style="margin-top: 24px">
-        <Giscus
-            id="comments"
-            repo="lvluoyue/api-doc"
-            repoId="R_kgDONdDcpg"
-            category="Announcements"
-            categoryid="DIC_kwDONdDcps4CnEHS"
-            mapping="title"
-            reactionsenabled="1"
-            emitmetadata="0"
-            inputposition="top"
-            loading="lazy"
-            lang="zh-CN"
-            :theme="isDark ? 'dark' : 'light'"
-            :key="route.path"
-        ></Giscus>
-      </div>
     </template>
     <template #layout-bottom>
       <RegisterSW />

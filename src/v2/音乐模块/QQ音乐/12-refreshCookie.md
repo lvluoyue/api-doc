@@ -1,4 +1,4 @@
-# cookie刷新API
+# cookie刷新API <Badge type="tip" text="V2" />
 
 ## 简要描述
 

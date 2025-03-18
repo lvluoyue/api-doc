@@ -1,4 +1,4 @@
-# 歌手搜索API
+# 歌手搜索API <Badge type="tip" text="V2" />
 
 ## 简要描述
 

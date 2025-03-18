@@ -1,4 +1,4 @@
-# 快捷搜索API
+# 快捷搜索API <Badge type="tip" text="V2" />
 
 ## 简要描述
 
