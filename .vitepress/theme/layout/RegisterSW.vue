@@ -82,7 +82,7 @@ onBeforeMount(async () => {
 <style>
 .pwa-toast {
   position: fixed;
-  right: 0;
+  left: 0;
   bottom: 0;
   margin: 16px;
   padding: 12px;

@@ -158,8 +158,8 @@ const vitePressConfig = (env): UserConfig => {
       outDir: "../dist", // 输出目录
       registerType: "autoUpdate", // 注册类型为自动更新
       includeManifestIcons: false, // 不包含清单图标
-      display: "minimal-ui",//fullscreen
-      display_override: ["minimal-ui", "fullscreen"],
+      display_override: ["fullscreen", "minimal-ui"],
+      display: "standalone",
       manifest: {
         id: "1", // 清单 ID
         name: title, // 应用名称
@@ -167,7 +167,7 @@ const vitePressConfig = (env): UserConfig => {
         description: description, // 应用的描述
         theme_color: "#ffffff", // 主题颜色
         lang: "zh-CN",
-        version: "1.0.0",
+        version: "1.0.1",
         icons: [
           {
             src: "./images/pwa-192x192.png", // 图标路径
@@ -185,7 +185,6 @@ const vitePressConfig = (env): UserConfig => {
       },
       workbox: {
         globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2,moc,json}"], // 匹配需要缓存的文件类型
-        exclude: [/\.map$/, /^manifest.*$/],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/model\.hacxy\.cn\/.*/i, // 匹配需要缓存的 Google 字体
