@@ -143,7 +143,7 @@ const vitePressConfig = (env): UserConfig => {
     cacheDir: '.cache',
     base: basePath,
     vite: {
-      configFile: __dirname + '/vite.config.mts'
+      configFile: './vite.config.mts'
     },
     pwa: {
       devOptions: {

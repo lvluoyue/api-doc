@@ -19,8 +19,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "./*.ts",
-    "./.vitepress/**/*.ts",
-    "./.vitepress/**/*.vue"
+    "/.vitepress/**/*.ts",
+    "/.vitepress/**/*.vue"
   ]
 }

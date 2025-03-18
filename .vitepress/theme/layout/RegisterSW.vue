@@ -4,7 +4,10 @@ import { onBeforeMount, ref } from 'vue'
 const offlineReady = ref(false)
 const needRefresh = ref(false)
 
-let updateServiceWorker: (() => Promise<void>) | undefined
+let updateServiceWorker: () => Promise<void> = () => {
+  console.warn('No SW registered.')
+  return Promise.resolve()
+}
 
 function onOfflineReady() {
   offlineReady.value = true
@@ -17,7 +20,7 @@ async function close() {
   needRefresh.value = false
 }
 
-const intervalMS = 60 * 60 * 1000;
+const intervalMS = 5 * 60 * 1000;
 
 onBeforeMount(async () => {
   const { registerSW } = await import('virtual:pwa-register')
@@ -58,7 +61,7 @@ onBeforeMount(async () => {
         aria-labelledby="pwa-message"
     >
       <div id="pwa-message" class="mb-3">
-        {{ offlineReady ? 'App ready to work offline' : 'New content available, click the reload button to update.' }}
+        {{ offlineReady ? '应用程序已准备好离线工作' : '有新内容可用，点击重新加载按钮进行更新。' }}
       </div>
       <button
           v-if="needRefresh"
@@ -66,14 +69,14 @@ onBeforeMount(async () => {
           class="pwa-refresh"
           @click="updateServiceWorker?.()"
       >
-        Reload
+        更新
       </button>
       <button
           type="button"
           class="pwa-cancel"
           @click="close"
       >
-        Close
+        关闭
       </button>
     </div>
   </template>
