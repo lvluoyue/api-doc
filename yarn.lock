@@ -948,7 +948,7 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
-"@bprogress/core@^1.1.15":
+"@bprogress/core@^1.3.3":
   version "1.3.3"
   resolved "https://registry.npmmirror.com/@bprogress/core/-/core-1.3.3.tgz#b44abf6471cd87d25c6167d8cfaf980ea8c68be3"
   integrity sha512-Vz9vzZE8xvfkgY09e0S6kzNz/ev/2lUw7A/z0TW7N0ZBG9xmVXrzSsFe3uvypxDa5ltn+xLBtfDtxBc8KsrvBQ==
@@ -1451,7 +1451,7 @@
     "@shikijs/vscode-textmate" "^10.0.2"
     "@types/hast" "^3.0.4"
 
-"@shikijs/vitepress-twoslash@^3.0.0":
+"@shikijs/vitepress-twoslash@^3.2.1":
   version "3.2.1"
   resolved "https://registry.npmmirror.com/@shikijs/vitepress-twoslash/-/vitepress-twoslash-3.2.1.tgz#698625b6678ccb2e27d9814bd97ad9d0f6e88805"
   integrity sha512-lQNmw3v9gBFYdxfCW5upcDwfQu8BTJz4D4VPN72XElBA6gW82PKNmzZDoHhVcEmgm/cRQpPjpiY6CYChtv/AEw==
@@ -1517,7 +1517,7 @@
   resolved "https://registry.npmmirror.com/@types/ms/-/ms-2.1.0.tgz#052aa67a48eccc4309d7f0191b7e41434b90bb78"
   integrity sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==
 
-"@types/node@^22.13.4":
+"@types/node@^22.13.10":
   version "22.13.10"
   resolved "https://registry.npmmirror.com/@types/node/-/node-22.13.10.tgz#df9ea358c5ed991266becc3109dc2dc9125d77e4"
   integrity sha512-I6LPUvlRH+O6VRUqYOcMudhaIdUVWfsjnZavnsraHvpBwaEyMN29ry+0UVJhImYL16xsscu0aske3yA+uPOWfw==
@@ -3473,7 +3473,7 @@ node-releases@^2.0.19:
   resolved "https://registry.npmmirror.com/node-releases/-/node-releases-2.0.19.tgz#9e445a52950951ec4d177d843af370b411caf314"
   integrity sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==
 
-npm-check-updates@^17.1.14:
+npm-check-updates@^17.1.15:
   version "17.1.15"
   resolved "https://registry.npmmirror.com/npm-check-updates/-/npm-check-updates-17.1.15.tgz#3e5734f5acf91de1c4ef3cd4ac460172d9195c99"
   integrity sha512-miATvKu5rjec/1wxc5TGDjpsucgtCHwRVZorZpDkS6NzdWXfnUWlN4abZddWb7XSijAuBNzzYglIdTm9SbgMVg==
@@ -4299,7 +4299,7 @@ typed-array-length@^1.0.7:
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
 
-typescript@^5.7.3:
+typescript@^5.8.2:
   version "5.8.2"
   resolved "https://registry.npmmirror.com/typescript/-/typescript-5.8.2.tgz#8170b3702f74b79db2e5a96207c15e65807999e4"
   integrity sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==
@@ -4437,7 +4437,7 @@ vite-plugin-pwa@^0.21.1:
     workbox-build "^7.3.0"
     workbox-window "^7.3.0"
 
-vite@^6.0.0, vite@^6.2.1:
+vite@^6.2.1, vite@^6.2.2:
   version "6.2.2"
   resolved "https://registry.npmmirror.com/vite/-/vite-6.2.2.tgz#8098b12a6bfd95abe39399aa7d5faa56545d7a1a"
   integrity sha512-yW7PeMM+LkDzc7CgJuRLMW2Jz0FxMOsVJ8Lv3gpgW9WLcb9cTW+121UEr1hvmfR7w3SegR5ItvYyzVz1vxNJgQ==
@@ -4448,7 +4448,7 @@ vite@^6.0.0, vite@^6.2.1:
   optionalDependencies:
     fsevents "~2.3.3"
 
-vitepress-i18n@^1.3.1:
+vitepress-i18n@^1.3.3:
   version "1.3.3"
   resolved "https://registry.npmmirror.com/vitepress-i18n/-/vitepress-i18n-1.3.3.tgz#831702d9f11223cc82fb070b2db72101a732c411"
   integrity sha512-iUbfj61QPYyi99zl9Vh50uy3HM6EesbbEWyeSCBOoV1aDeVWOY/3vusL/XU1/0zTDIfLbv/lLvoOhOM+2rLQcw==
@@ -4460,16 +4460,16 @@ vitepress-plugin-comment-with-giscus@^1.1.15:
   dependencies:
     "@giscus/vue" "^2.2.8"
 
-vitepress-plugin-group-icons@^1.3.6:
-  version "1.3.7"
-  resolved "https://registry.npmmirror.com/vitepress-plugin-group-icons/-/vitepress-plugin-group-icons-1.3.7.tgz#e8458c6c1eb0e3a1fe8295316e4fea6e8262aded"
-  integrity sha512-2pS7KATeAPXTVOiXF0cU9Jh8TiMWuLn7uzQr1RkYG8fmILvUfue60w2WtloOfrAenByzYSQ724A4aQzUCgVfqw==
+vitepress-plugin-group-icons@^1.3.8:
+  version "1.3.8"
+  resolved "https://registry.npmmirror.com/vitepress-plugin-group-icons/-/vitepress-plugin-group-icons-1.3.8.tgz#997d7591dd1b4c73cd1ceeaf99683c7268faeea3"
+  integrity sha512-BIx1HgXEvbDeJX8NqVvthWHQqEW2slj1SkAWLMNoUR5IJq1dq6LmrURYCyznMJCB3/0g+YY89ifvQp3in1fX3g==
   dependencies:
     "@iconify-json/logos" "^1.2.4"
     "@iconify-json/vscode-icons" "^1.2.14"
     "@iconify/utils" "^2.3.0"
 
-vitepress-sidebar@^1.31.0:
+vitepress-sidebar@^1.31.1:
   version "1.31.1"
   resolved "https://registry.npmmirror.com/vitepress-sidebar/-/vitepress-sidebar-1.31.1.tgz#d13b87de8ac47303605bdf9deb0702b39cfee102"
   integrity sha512-Hx10z5le87jIIXVfKq4AtRrVqVJJ/1cQsZhmwT+ghVR/j4Yor9FjNMszyigJ54ktrEtoxSLO6C9tvuLauT4lZA==

@@ -160,8 +160,7 @@ const vitePressConfig = (env): UserConfig => {
       outDir: "../dist", // 输出目录
       registerType: "autoUpdate", // 注册类型为自动更新
       includeManifestIcons: false, // 不包含清单图标
-      display_override: ["fullscreen", "minimal-ui"],
-      display: "standalone",
+      display: "fullscreen",
       manifest: {
         id: "1", // 清单 ID
         name: title, // 应用名称
@@ -258,7 +257,9 @@ const vitePressSidebarConfig: VitePressSidebarOptions = () => {
       useTitleFromFrontmatter: true,
       sortMenusOrderNumericallyFromLink: true,
       includeRootIndexFile: true,
-      manualSortFileNameByPriority: ['指南', '音乐模块', 'index.md']
+      manualSortFileNameByPriority: ['指南', '音乐模块', 'index.md'],
+      removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
+      prefixSeparator: '.', //删除前缀的符号
     },
     {
       documentRootPath: "/src",

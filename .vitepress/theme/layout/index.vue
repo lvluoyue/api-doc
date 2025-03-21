@@ -1,13 +1,11 @@
 <script setup>
-import { useRoute, useData, useRouter, inBrowser } from 'vitepress';
+import { useRouter, inBrowser } from 'vitepress';
 import RegisterSW from "./RegisterSW.vue";
 import DefaultTheme from 'vitepress/theme'
 import useSpendTime from '../hooks/useSpendTime'
 import useThemeTransition from '../hooks/useThemeTransition'
 import '../style.css'
 
-const route = useRoute();
-const { isDark } = useData();
 const { text, textStyle, colorStyle } = useSpendTime()
 
 useThemeTransition()
@@ -23,7 +21,7 @@ if (inBrowser) {
     showSpinner: false,
     speed: 200,
     trickleSpeed: 200,
-    positionUsing: "width"
+    positionUsing: "width",
   })
   router.onBeforeRouteChange = () => {
     BProgress.start() // 开始进度条

@@ -438,6 +438,15 @@
   box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
   padding-top: 20px;
 }
+
+.vp-doc .vp-code-block-title {
+  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
+}
+
+.vp-doc .vp-code-block-title div[class*=language-] {
+  box-shadow: none;
+}
+
 .vp-doc div[class*='language-'], .vp-block {
   margin: auto;
 }
@@ -562,5 +571,3 @@
   display: table;
   width: 100%;
 }
-
-

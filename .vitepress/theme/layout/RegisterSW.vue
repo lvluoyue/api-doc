@@ -1,21 +1,33 @@
 <script setup lang="ts">
 import { onBeforeMount, ref } from 'vue'
 import { useWebNotification } from '@vueuse/core'
-const {isSupported,notification,show,close,onClick,onShow,onError,onClose} = useWebNotification({
-  title: 'Hello, VueUse world!',
-  dir: 'auto',
-  lang: 'en',
-  renotify: true,
-  tag: 'test',
-})
 
 let updateServiceWorker: (() => Promise<void>) | undefined
 
-function onOfflineReady() {
-  show()
+const {isSupported,show} = useWebNotification({
+  requestPermissions: true
+})
+
+if (!isSupported) {
+  console.error('Service Worker is not supported in this browser.')
 }
+
+function onOfflineReady() {
+  show({
+    title: '网页加载完毕，您可以在断网后仍然可以访问页面！',
+    icon: './images/pwa-512x512.png',
+    dir: 'auto',
+    renotify: true,
+  })
+}
+
 function onNeedRefresh() {
-  show()
+  show({
+    title: '落月API有新的版本，正在为您自动更新！',
+    icon: './images/pwa-512x512.png',
+    dir: 'auto',
+    renotify: true,
+  })
 }
 
 const intervalMS = 5 * 60 * 1000;
