@@ -6,7 +6,7 @@
 - 与v1版本有细微差别，主要在请求参数方面，使命名更规范。
 
 ## 请求URL
-- `https://api.vkeys.cn/v2/music/tencent`
+- `/v2/music/tencent`
 
 ## 请求方式
 - `GET` / `POST`

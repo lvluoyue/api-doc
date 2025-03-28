@@ -7,7 +7,7 @@
 - 此接口不会存储您的ck数据，请放心使用。
 
 ## 请求URL
-- `https://api.vkeys.cn/v2/music/tencent/cookie`
+- `/v2/music/tencent/cookie`
 
 ## 请求方式
 - `GET` / `POST`

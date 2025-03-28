@@ -5,7 +5,7 @@
 - 通过用户扫描二维码获取QQ音乐的cookie，获取成功后系统会将结果发送到目标邮箱中。
 
 ## 请求URL
-- `https://api.vkeys.cn/v2/music/tencent/qrcode
+- `/v2/music/tencent/qrcode`
 
 ## 请求方式
 - `GET` / `POST`

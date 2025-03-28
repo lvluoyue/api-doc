@@ -5,7 +5,7 @@
 - 这是一个QQ音乐搜索接口，只能用于搜索，其他参数无效。
 
 ## 请求URL
-- `https://api.vkeys.cn/v2/music/tencent/singer/songlist`
+- `/v2/music/tencent/singer/songlist`
 
 ## 请求方式
 - `GET` / `POST`

@@ -30,7 +30,7 @@ function onNeedRefresh() {
   })
 }
 
-const intervalMS = 5 * 60 * 1000;
+const intervalMS = 60 * 1000;
 
 onBeforeMount(async () => {
   const { registerSW } = await import('virtual:pwa-register')

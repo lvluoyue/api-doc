@@ -8,13 +8,13 @@
 - QQ音乐搜索接口，用于歌曲列表搜索。支持分页。
 
 ## 接口地址
--  `GET` `https://api.vkeys.cn/music/tencent/searchSong`
+-  `GET` `/music/tencent/search/song`
 
 ## 请求数据类型
 - `application/x-www-form-urlencoded`
 
 ## 请求示例
-- https://api.vkeys.cn/music/tencent/searchSong?keyword=狐妖小红娘
+- https://api.vkeys.cn/music/tencent/search/song?keyword=狐妖小红娘
 
 ## 请求参数
 |   参数名   | 是否必填 |  数据类型   | 默认值 | 说明                  |

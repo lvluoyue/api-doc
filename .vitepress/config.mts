@@ -18,6 +18,9 @@ const vitePressConfig = (env): UserConfig => {
     lang: 'zh-CN',
     title: title,
     description: description,
+    contentProps: {
+      a: 'b'
+    },
     head: [
       [
         "link",
@@ -246,7 +249,7 @@ const vitePressSidebarConfig: VitePressSidebarOptions = () => {
       useTitleFromFrontmatter: true,
       sortMenusOrderNumericallyFromLink: true,
       includeRootIndexFile: true,
-      manualSortFileNameByPriority: ['指南', '音乐模块', 'index.md']
+      manualSortFileNameByPriority: ['指南', '音乐模块', '搜索接口', 'index.md']
     },
     {
       documentRootPath: "/src",

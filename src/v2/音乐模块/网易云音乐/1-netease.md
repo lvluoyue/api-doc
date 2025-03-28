@@ -7,7 +7,7 @@
 - 支持付费歌曲，但是付费专辑无法获取。
 
 ## 请求URL
-- `https://api.vkeys.cn/v2/music/netease`
+- `/v2/music/netease`
 
 ## 请求方式
 - `GET` / `POST`

@@ -5,7 +5,7 @@
 - QQ音乐快搜索接口，用于音乐搜索表单提示。
 
 ## 请求URL
-- `https://api.vkeys.cn/v2/music/tencent/search/smartbox`
+- `/v2/music/tencent/search/smartbox`
 
 ## 请求方式
 - `GET` / `POST`

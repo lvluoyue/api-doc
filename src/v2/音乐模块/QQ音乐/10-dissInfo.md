@@ -6,7 +6,7 @@
 - 所需参数在搜索或获取播放地址时获取
 
 ## 请求URL
-- `https://api.vkeys.cn/v2/music/tencent/dissinfo`
+- `/v2/music/tencent/dissinfo`
 
 ## 请求方式
 - `GET` / `POST`

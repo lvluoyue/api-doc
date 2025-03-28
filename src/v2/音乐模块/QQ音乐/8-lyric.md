@@ -5,7 +5,7 @@
 - 逐字歌词标记了每个字在音频中的某个时间段，可用于编写歌词渐变。
 
 ## 请求URL
-- `https://api.vkeys.cn/v2/music/tencent/lyric`
+- `/v2/music/tencent/lyric`
 
 ## 请求方式
 - `GET` / `POST`

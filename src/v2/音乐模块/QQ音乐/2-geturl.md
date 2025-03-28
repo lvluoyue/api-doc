@@ -5,7 +5,7 @@
 - 此接口可以根据音乐id或mid获取QQ音乐链接以及相关信息。
 
 ## 请求URL
-- `https://api.vkeys.cn/v2/music/tencent/geturl`
+- `/v2/music/tencent/geturl`
 
 ## 请求方式
 - `GET` / `POST`
