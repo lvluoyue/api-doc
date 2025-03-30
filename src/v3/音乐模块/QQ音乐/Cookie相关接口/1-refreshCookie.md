@@ -1,10 +1,9 @@
 # cookie刷新API <Badge type="tip" text="V3" />
-::: danger
-此接口仍在开发中，在此期间接口可能会经常变更，不建议使用。
+::: info
+该接口中cookie的值缓存1分钟，info的值缓存30分钟。
 :::
 
 ## 接口描述
-
 - 生成一个新的cookie，并返回账号的相关信息。
 - 携带refresh_key和refresh_token时可使用过期的key生成新的cookie（退出登录后不可生成）。
 
@@ -15,7 +14,7 @@
 - `application/x-www-form-urlencoded`
 
 ## 请求示例
-- https://api.vkeys.cn/music/tencent/cookie/refresh?uin=1569097443&musickey=Q_H_L_59H1q......
+- https://api.vkeys.cn/music/tencent/cookie/refresh?uin=1569097443&music_key=Q_H_L_59H1q......
 
 ## 请求参数
 
@@ -33,7 +32,7 @@
 | W_X&#95;   | 最大19位 | 微信账号ck |
 
 ## 返回示例
-```
+``` json
 {
     "code": 200,
     "message": "请求成功！",

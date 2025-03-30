@@ -249,7 +249,7 @@ const vitePressSidebarConfig: VitePressSidebarOptions = () => {
       useTitleFromFrontmatter: true,
       sortMenusOrderNumericallyFromLink: true,
       includeRootIndexFile: true,
-      manualSortFileNameByPriority: ['指南', '音乐模块', '搜索接口', 'index.md']
+      manualSortFileNameByPriority: ['指南', '音乐模块', '搜索相关接口', 'index.md']
     },
     {
       documentRootPath: "/src",

@@ -427,6 +427,16 @@
   transition: background-color 0.25s;
 }
 
+.VPSidebarItem.level-0 > .item > .text {
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.VPSidebarItem.level-1 > .item > .text {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
 /* 超链接下划线 */
 .vp-doc a {
   text-decoration: none;

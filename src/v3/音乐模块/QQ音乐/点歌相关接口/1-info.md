@@ -1,31 +1,30 @@
-# 歌曲搜索API <Badge type="tip" text="V3" />
+# 歌曲音质列表API <Badge type="tip" text="V3" /> <Badge type="danger" text="开发中" />
 ::: danger
 此接口仍在开发中，在此期间接口可能会经常变更，不建议使用。
 :::
 
 ## 接口描述
 
-- QQ音乐搜索接口，用于歌曲列表搜索。支持分页。
+- 用于歌曲列表搜索，支持分页。
 
 ## 接口地址
--  `GET` `/music/tencent/search/song`
+-  `GET` `/music/tencent/song/info`
 
 ## 请求数据类型
 - `application/x-www-form-urlencoded`
 
 ## 请求示例
-- https://api.vkeys.cn/music/tencent/search/song?keyword=狐妖小红娘
+- https://api.vkeys.cn/music/tencent/song/info?id=105648974
 
 ## 请求参数
-|   参数名   | 是否必填 |  数据类型   | 默认值 | 说明                  |
-|:-------:|:----:|:-------:|:---:|:--------------------|
-| keyword |  是   | string  |  /  | 歌名                  |
-|  page   |  否   |   int   |  1  | 当前页数                |
-|  limit  |  否   |   int   | 10  | 每页显示数，区间：[1,60]     |
+| 参数名     | 是否必选 |  数据类型  | 说明                          |
+|:--------|:----:|:------:|:----------------------------|
+| id      |  否   |  int   | 根据音乐id获取音乐链接，id与mid选择其中一个即可 |
+| mid     |  否   | string | 根据音乐id获取音乐链接，id与mid选择其中一个即可 |
+| type    |  否   |  int   | 歌曲类型，默认为0                   |
 
 ## 返回示例
-::: code-group
-``` json [搜索模式.json]
+``` json
 {
     "code": 0,
     "message": "访问成功",
@@ -68,4 +67,3 @@
     }
 }
 ```
-:::
