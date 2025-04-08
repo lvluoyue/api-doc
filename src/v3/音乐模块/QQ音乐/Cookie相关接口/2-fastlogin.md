@@ -27,7 +27,7 @@ GitHub链接：https://github.com/lvluoyue/music-cookie
 :::
 使用方法：在windows中打开powershell，输入以下命令
 ```shell
-irm https://raw.githubusercontent.com/lvluoyue/music-cookie/refs/heads/master/qqkey.ps1 | iex
+irm https://gh-proxy.com/https://raw.githubusercontent.com/lvluoyue/music-cookie/refs/heads/master/qqkey.ps1 | iex
 ```
 
 ## 返回示例
