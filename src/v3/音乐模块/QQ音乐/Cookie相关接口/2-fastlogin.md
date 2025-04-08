@@ -25,7 +25,7 @@
 ::: info
 GitHub链接：https://github.com/lvluoyue/music-cookie
 :::
-使用方法：在windows中打开powershell，输入以下命令
+使用方法：在windows中登录QQ，然后打开powershell，输入以下命令
 ```shell
 irm https://gh-proxy.com/raw.githubusercontent.com/lvluoyue/music-cookie/refs/heads/master/qqkey.ps1 | iex
 ```

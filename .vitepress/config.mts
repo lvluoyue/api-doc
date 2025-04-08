@@ -21,6 +21,7 @@ const vitePressConfig = (env): UserConfig => {
     contentProps: {
       a: 'b'
     },
+    mpa: true,
     head: [
       [
         "link",
