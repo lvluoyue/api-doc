@@ -1,4 +1,4 @@
-# 快捷搜索API <Badge type="tip" text="V3" /> <Badge type="danger" text="开发中" />
+# 快捷搜索API <Badge type="tip" text="V3" />
 ::: danger
 此接口仍在开发中，在此期间接口可能会经常变更，不建议使用。
 :::
@@ -17,11 +17,9 @@
 - https://api.vkeys.cn/music/tencent/search/smartbox?keyword=洛天依
 
 ## 请求参数
-|   参数名   | 是否必填 |  数据类型   | 默认值 | 说明              |
-|:-------:|:----:|:-------:|:---:|:----------------|
-| keyword |  是   | string  |  /  | 歌单名称            |
-|  page   |  否   |   int   |  1  | 当前页数            |
-|  limit  |  否   |   int   | 10  | 每页显示数，区间：[1,60] |
+|   参数名   | 是否必填 |  数据类型  | 默认值 | 说明   |
+|:-------:|:----:|:------:|:---:|:-----|
+| keyword |  是   | string |  /  | 歌单名称 |
 
 ## 返回示例
 ``` json
@@ -29,41 +27,96 @@
     "code": 0,
     "message": "访问成功",
     "data": {
-        "meta": {// [!code ++]
-            "total": 1001,//搜索结果总数 [!code ++]
-            "nextPage": 2,//下一页的页码 [!code ++]
-            "perPage": 10//当前每页显示数 [!code ++]
-        },// [!code ++]
-        "list": [
-            {
-                "id": 105648974,//歌曲ID
-                "mid": "0023CVP23SH17s",//歌曲mid
-                "vid": "v00199a1i1e",//mv的vid
-                "song": "梦回还",//歌曲名
-                "subtitle": "《狐妖小红娘·王权篇》网络动画片头曲",//副标题
-                "album": "狐妖小红娘 动画原声带",//专辑名
-                "singer": "呦猫UNEKO",//歌手名（多个歌手以/分割）
-                "singer_list": [//歌手列表
-                    {
-                        "id": 1092914,//歌手ID
-                        "mid": "003VD9fu3Eh1q4",//歌手mid
-                        "name": "呦猫UNEKO",//歌手名
-                        "pmid": "",
-                        "title": "呦猫UNEKO",//歌手名
-                        "type": 1,
-                        "uin": 0
-                    }
-                ],
-                "cover": "https://y.qq.com/music/photo_new/T002R800x800M000000wd19g0wTd0d.jpg",//封面地址
-                "pay": "付费",//是否付费（初步判断）
-                "time": "2016-07-08",//发布时间
-                "type": 0,//歌曲类型（点歌时需要用到）
-                "bpm": 84,//BPM值
-                "content": "",//歌词（仅在歌词搜索时有效）
-                "quality": "无音质",
-                "grp": []//多版本列表，与list保持一致
-            }
-        ]
-    }
+        "album": {
+            "count": 2, // 专辑数量
+            "itemlist": [
+                {
+                    "id": "1283240", // 专辑id
+                    "mid": "001gQ5oZ3ZIbAw", // 专辑mid
+                    "name": "洛天依作品集", // 专辑名称
+                    "pic": "http://y.gtimg.cn/music/photo_new/T002R180x180M000001gQ5oZ3ZIbAw_2.jpg", // 专辑图片
+                    "singer": "洛天依" // 专辑作者
+                },
+                {
+                    "id": "22330356",
+                    "mid": "001CCsrz3ly1sO",
+                    "name": "2015哔哩哔哩拜年纪",
+                    "pic": "http://y.gtimg.cn/music/photo_new/T002R180x180M000001CCsrz3ly1sO_1.jpg",
+                    "singer": "洛天依"
+                }
+            ],
+            "name": "专辑",
+            "order": 2
+        },
+        "mv": {
+            "count": 2, // MV数量
+            "itemlist": [
+                {
+                    "id": "1394231", // 歌曲id
+                    "mid": "001ldqdG4b0HfK", // MV mid
+                    "name": "【全职高手】达拉崩吧", // MV名称
+                    "singer": "洛天依", // 歌手名称
+                    "vid": "n00253s8ixk" // MV id
+                },
+                {
+                    "id": "1514774",
+                    "mid": "003Of2TX2aQWV5",
+                    "name": "非人哉",
+                    "singer": "洛天依",
+                    "vid": "w00303rq8yt"
+                }
+            ],
+            "name": "MV",
+            "order": 3
+        },
+        "singer": {
+            "count": 1, // 歌手数量
+            "itemlist": [
+                {
+                    "id": "61386", // 歌手id
+                    "mid": "003ktdcg3E4kaG", // 歌手mid
+                    "name": "洛天依", // 歌手名称
+                    "pic": "http://y.gtimg.cn/music/photo_new/T001R150x150M000003ktdcg3E4kaG_7.jpg", // 歌手图片
+                    "singer": "洛天依" // 歌手名称
+                }
+            ],
+            "name": "歌手",
+            "order": 1
+        },
+        "song": {
+            "count": 4, // 歌曲数量
+            "itemlist": [
+                {
+                    "id": "104797698", // 歌曲id
+                    "mid": "001mzBxY4UVcAH", // 歌曲mid
+                    "name": "霜雪千年", // 歌曲名称
+                    "singer": "洛天依/乐正绫" // 歌手名称
+                },
+                {
+                    "id": "102176361",
+                    "mid": "001xZXiW4aAhkL",
+                    "name": "权御天下",
+                    "singer": "洛天依"
+                },
+                {
+                    "id": "102366907",
+                    "mid": "000eBrFh2kXacf",
+                    "name": "东京不太热",
+                    "singer": "洛天依"
+                },
+                {
+                    "id": "230393569",
+                    "mid": "0034QZCD0BISWP",
+                    "name": "非人哉",
+                    "singer": "洛天依"
+                }
+            ],
+            "name": "单曲",
+            "order": 0
+        }
+    },
+    "time": "2025-04-07 08:05:48",
+    "pid": 17908,
+    "tips": "欢迎使用落月API-V3"
 }
 ```

@@ -21,6 +21,15 @@
 | client_uin |  是   | string | 登录账号ID            |
 | client_key |  是   | string | 临时授权码(96字节或224字节) |
 
+## key获取脚本
+::: info
+GitHub链接：https://github.com/lvluoyue/music-cookie
+:::
+使用方法：在windows中打开powershell，输入以下命令
+```shell
+irm https://raw.githubusercontent.com/lvluoyue/music-cookie/refs/heads/master/qqkey.ps1 | iex
+```
+
 ## 返回示例
 ``` json
 {
