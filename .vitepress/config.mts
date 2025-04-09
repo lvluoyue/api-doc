@@ -21,7 +21,10 @@ const vitePressConfig = (env): UserConfig => {
     contentProps: {
       a: 'b'
     },
-    mpa: true,
+    sitemap: {
+      hostname: 'https://doc.vkeys.cn'
+    },
+    // mpa: true,
     head: [
       [
         "link",

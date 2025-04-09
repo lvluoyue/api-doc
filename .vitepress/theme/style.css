@@ -577,7 +577,14 @@
 .dark::view-transition-old(root) {
   z-index: 9999;
 }
+
+
 .vp-doc table {
   display: table;
   width: 100%;
+}
+
+.table-overflow {
+  overflow-x:auto;
+  white-space: nowrap;
 }

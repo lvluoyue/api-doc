@@ -17,9 +17,13 @@
 - https://api.vkeys.cn/music/tencent/search/smartbox?keyword=洛天依
 
 ## 请求参数
+<div class="table-overflow">
+
 |   参数名   | 是否必填 |  数据类型  | 默认值 | 说明   |
 |:-------:|:----:|:------:|:---:|:-----|
 | keyword |  是   | string |  /  | 歌单名称 |
+
+</div>
 
 ## 返回示例
 ``` json
