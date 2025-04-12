@@ -1,4 +1,4 @@
-# pc端快速登录API <Badge type="tip" text="V3" />
+# pc端快速登录API <Badge type="tip" text="V3" /> <Badge type="new" text="new" />
 ::: warning
 此功能需要使用电脑端QQ登录账号。登录成功后点击登录按钮，即可获取cookie。
 :::

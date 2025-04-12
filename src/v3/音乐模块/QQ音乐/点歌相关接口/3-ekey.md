@@ -1,4 +1,4 @@
-# 获取加密播放链接API <Badge type="tip" text="V3" /> <Badge type="danger" text="开发中" />
+# 获取加密播放链接API <Badge type="tip" text="V3" /> <Badge type="danger" text="开发中" /> <Badge type="new" text="new" />
 ::: danger
 此接口仍在开发中，在此期间接口可能会经常变更，不建议使用。
 :::

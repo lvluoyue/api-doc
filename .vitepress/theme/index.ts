@@ -82,73 +82,90 @@ export default {
             },
           },
           {
-            name: '御坂美琴',
-            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/mikoto/mikoto.model.json',
+            name: 'ATRI',
+            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/Arisf0617/Live-2D/refs/heads/main/ATRI/ATRI.model3.json',
             volume: 1,
-            scale: 0.26,
-            position: [-50, 10],
+            scale: 0.18,
+            position: [30, 100],
             stageStyle: {
-              height: 340,
-              width: 220
+              height: 400,
+              width: 250
             },
-            mobileScale: 0.2,
-            mobilePosition: [-40, 30],
+            mobileScale: 0.12,
+            mobilePosition: [20, 100],
             mobileStageStyle: {
-              height: 290,
+              height: 300,
               width: 160
             },
           },
-          {
-            name: '白井黑子',
-            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/kuroko/kuroko.model.json',
-            volume: 1,
-            scale: 0.26,
-            position: [-50, 10],
-            stageStyle: {
-              height: 340,
-              width: 220
-            },
-            mobileScale: 0.2,
-            mobilePosition: [-40, 30],
-            mobileStageStyle: {
-              height: 290,
-              width: 160
-            },
-          },
-          {
-            name: '佐天泪子',
-            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/saten/saten.model.json',
-            volume: 1,
-            scale: 0.26,
-            position: [-50, 10],
-            stageStyle: {
-              height: 340,
-              width: 220
-            },
-            mobileScale: 0.2,
-            mobilePosition: [-40, 30],
-            mobileStageStyle: {
-              height: 290,
-              width: 160
-            },
-          },
-          {
-            name: '初春饰利',
-            path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/uiharu/uiharu.model.json',
-            volume: 1,
-            scale: 0.26,
-            position: [-50, 10],
-            stageStyle: {
-              height: 340,
-              width: 220
-            },
-            mobileScale: 0.2,
-            mobilePosition: [-40, 30],
-            mobileStageStyle: {
-              height: 290,
-              width: 160
-            },
-          },
+          // {
+          //   name: '御坂美琴',
+          //   path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/mikoto/mikoto.model.json',
+          //   volume: 1,
+          //   scale: 0.26,
+          //   position: [-50, 10],
+          //   stageStyle: {
+          //     height: 340,
+          //     width: 220
+          //   },
+          //   mobileScale: 0.2,
+          //   mobilePosition: [-40, 30],
+          //   mobileStageStyle: {
+          //     height: 290,
+          //     width: 160
+          //   },
+          // },
+          // {
+          //   name: '白井黑子',
+          //   path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/kuroko/kuroko.model.json',
+          //   volume: 1,
+          //   scale: 0.26,
+          //   position: [-50, 10],
+          //   stageStyle: {
+          //     height: 340,
+          //     width: 220
+          //   },
+          //   mobileScale: 0.2,
+          //   mobilePosition: [-40, 30],
+          //   mobileStageStyle: {
+          //     height: 290,
+          //     width: 160
+          //   },
+          // },
+          // {
+          //   name: '佐天泪子',
+          //   path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/saten/saten.model.json',
+          //   volume: 1,
+          //   scale: 0.26,
+          //   position: [-50, 10],
+          //   stageStyle: {
+          //     height: 340,
+          //     width: 220
+          //   },
+          //   mobileScale: 0.2,
+          //   mobilePosition: [-40, 30],
+          //   mobileStageStyle: {
+          //     height: 290,
+          //     width: 160
+          //   },
+          // },
+          // {
+          //   name: '初春饰利',
+          //   path: 'https://gh-proxy.com/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/uiharu/uiharu.model.json',
+          //   volume: 1,
+          //   scale: 0.26,
+          //   position: [-50, 10],
+          //   stageStyle: {
+          //     height: 340,
+          //     width: 220
+          //   },
+          //   mobileScale: 0.2,
+          //   mobilePosition: [-40, 30],
+          //   mobileStageStyle: {
+          //     height: 290,
+          //     width: 160
+          //   },
+          // },
           {
             path: 'https://model.hacxy.cn/Pio/model.json',
             scale: 0.4,

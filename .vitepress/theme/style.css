@@ -578,6 +578,11 @@
   z-index: 9999;
 }
 
+.VPBadge.new {
+  border-color: var(--vp-badge-tip-border);
+  color: var(--vp-c-success-1);
+  background-color: var(--vp-c-success-soft);
+}
 
 .vp-doc table {
   display: table;
