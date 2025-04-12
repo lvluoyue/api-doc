@@ -3,7 +3,7 @@
     "incremental": false,
     "typeRoots": ["node_modules/@types"],
     "target": "ESNext",
-    "module": "nodenext",
+    "module": "ESNext",
     "moduleResolution": "Bundler",
     "lib": ["DOM", "ESNext"],
     "types": [

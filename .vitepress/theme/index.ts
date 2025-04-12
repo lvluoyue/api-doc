@@ -1,13 +1,26 @@
 // https://vitepress.dev/guide/custom-theme
 import giscusTalk from 'vitepress-plugin-comment-with-giscus'
-import {useData, useRoute, type Theme} from 'vitepress'
+import {type Theme, useData, useRoute} from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Layout from './layout/index.vue'
 
+// @ts-ignore
 import TwoslashFloatingVue from '@shikijs/vitepress-twoslash/client'
-import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
-import { InjectionKey, type Options as InjectionKeyOptions } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-import { NolebasePagePropertiesPlugin, type Options, type DynamicProperty } from '@nolebase/vitepress-plugin-page-properties/client'
+// @ts-ignore
+import {NolebaseGitChangelogPlugin} from '@nolebase/vitepress-plugin-git-changelog/client'
+import {
+  InjectionKey,
+  LayoutMode,
+  type Options as InjectionKeyOptions,
+  SpotlightStyle
+  // @ts-ignore
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import {
+  type DynamicProperty,
+  NolebasePagePropertiesPlugin,
+  type Options
+  // @ts-ignore
+} from '@nolebase/vitepress-plugin-page-properties/client'
 
 import 'virtual:group-icons.css'
 import '@shikijs/vitepress-twoslash/style.css'
@@ -44,7 +57,17 @@ export default {
     app.use(TwoslashFloatingVue)
     app.use(NolebaseGitChangelogPlugin)
     app.provide(InjectionKey, {
-      // 配置... //
+      layoutSwitch: {
+        disableHelp: true,
+        defaultMode: LayoutMode.Original,
+        contentLayoutMaxWidth: {
+          defaultMaxWidth: 100
+        },
+      },
+      spotlight: {
+        defaultToggle: true,
+        defaultStyle: SpotlightStyle.Aside
+      }
     } as InjectionKeyOptions)
     app.use(NolebasePagePropertiesPlugin(), {
       properties: {
