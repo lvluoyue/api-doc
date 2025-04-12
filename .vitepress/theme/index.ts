@@ -12,7 +12,7 @@ import { NolebasePagePropertiesPlugin, type Options, type DynamicProperty } from
 import 'virtual:group-icons.css'
 import '@shikijs/vitepress-twoslash/style.css'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
-import '@nolebase/vitepress-plugin-page-properties/client/style.css';
+import '@nolebase/vitepress-plugin-page-properties/client/style.css'
 
 export default {
   extends: DefaultTheme,

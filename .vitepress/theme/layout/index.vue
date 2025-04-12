@@ -3,17 +3,17 @@ import '../style.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 
-import RegisterSW from "./RegisterSW.vue"
-import SpendTime from "./SpendTime.vue"
 import DefaultTheme from 'vitepress/theme'
-import useLive2D from "../hooks/useLive2D"
-import useBprogress from "../hooks/useBprogress";
-import useThemeTransition from '../hooks/useThemeTransition'
+import useLive2D from "./hooks/useLive2D"
+import useBprogress from "./hooks/useBprogress";
+import useRegisterSW from "./hooks/useRegisterSW";
+import useThemeTransition from './hooks/useThemeTransition'
 import {
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 
+useRegisterSW()
 useThemeTransition()
 useLive2D()
 useBprogress()
@@ -22,12 +22,6 @@ useBprogress()
 
 <template>
   <DefaultTheme.Layout>
-<!--    <template #doc-before>-->
-<!--      <SpendTime></SpendTime>-->
-<!--    </template>-->
-    <template #layout-bottom>
-      <RegisterSW />
-    </template>
     <template #nav-bar-content-after>
       <NolebaseEnhancedReadabilitiesMenu />
     </template>
@@ -37,9 +31,7 @@ useBprogress()
   </DefaultTheme.Layout>
 </template>
 
-
 <style>
-
 .VPSwitchAppearance {
   width: 22px !important;
 }

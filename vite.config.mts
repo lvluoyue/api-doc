@@ -19,6 +19,7 @@ export default defineConfig({
   ssr: {
     noExternal: [
       '@nolebase/*',
+      'virtual:pwa-register'
     ],
   },
   plugins: [

@@ -131,6 +131,10 @@ const vitePressConfig = (env): UserConfig => {
         label: "页面导航",
       },
 
+      editLink: {
+        pattern: 'https://github.com/lvluoyue/api-doc/edit/main/src/:path'
+      },
+
       lastUpdated: {
         text: "最后更新于",
         formatOptions: {
@@ -146,9 +150,6 @@ const vitePressConfig = (env): UserConfig => {
       darkModeSwitchLabel: "主题",
       lightModeSwitchTitle: "切换到浅色模式",
       darkModeSwitchTitle: "切换到深色模式",
-    },
-    editLink: {
-      pattern: 'https://github.com/lvluoyue/api-doc/edit/main/src/:path'
     },
     outDir: 'dist',
     srcDir: 'src',
@@ -198,12 +199,26 @@ const vitePressConfig = (env): UserConfig => {
         globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2,moc,json}"], // 匹配需要缓存的文件类型
         runtimeCaching: [
           {
+            urlPattern: /\.(js|html)(\?.*)?/i, // 匹配json后缀
+            handler: "NetworkFirst", // 缓存优先策略
+            options: {
+              cacheName: "docs", // 缓存名称
+              expiration: {
+                maxEntries: 200, // 最大缓存条目数
+                maxAgeSeconds: 60 * 60 * 24 * 3, // 缓存有效期，3天
+              },
+              cacheableResponse: {
+                statuses: [0, 200], // 缓存的响应状态码
+              },
+            },
+          },
+          {
             urlPattern: /^https:\/\/model\.hacxy\.cn\/.*/i, // 匹配需要缓存的 Google 字体
             handler: "CacheFirst", // 缓存优先策略
             options: {
               cacheName: "live2d-model-hacxy", // 缓存名称
               expiration: {
-                maxEntries: 50, // 最大缓存条目数
+                maxEntries: 30, // 最大缓存条目数
                 maxAgeSeconds: 60 * 60 * 24 * 365, // 缓存有效期，365天
               },
               cacheableResponse: {
@@ -217,7 +232,7 @@ const vitePressConfig = (env): UserConfig => {
             options: {
               cacheName: "giscus", // 缓存名称
               expiration: {
-                maxEntries: 50, // 最大缓存条目数
+                maxEntries: 20, // 最大缓存条目数
                 maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存有效期，7天
               },
               cacheableResponse: {
@@ -231,7 +246,7 @@ const vitePressConfig = (env): UserConfig => {
             options: {
               cacheName: "gh-proxy", // 缓存名称
               expiration: {
-                maxEntries: 50, // 最大缓存条目数
+                maxEntries: 30, // 最大缓存条目数
                 maxAgeSeconds: 60 * 60 * 24 * 365, // 缓存有效期，365天
               },
               cacheableResponse: {
