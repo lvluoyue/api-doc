@@ -1,47 +1,38 @@
 <script setup>
-import { useRouter, inBrowser } from 'vitepress';
-import RegisterSW from "./RegisterSW.vue";
-import DefaultTheme from 'vitepress/theme'
-import useSpendTime from '../hooks/useSpendTime'
-import useThemeTransition from '../hooks/useThemeTransition'
 import '../style.css'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 
-const { text, textStyle, colorStyle } = useSpendTime()
+import RegisterSW from "./RegisterSW.vue"
+import SpendTime from "./SpendTime.vue"
+import DefaultTheme from 'vitepress/theme'
+import useLive2D from "../hooks/useLive2D"
+import useBprogress from "../hooks/useBprogress";
+import useThemeTransition from '../hooks/useThemeTransition'
+import {
+  NolebaseEnhancedReadabilitiesMenu,
+  NolebaseEnhancedReadabilitiesScreenMenu,
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 
 useThemeTransition()
+useLive2D()
+useBprogress()
 
-import { BProgress } from '@bprogress/core' // 进度条组件
-import '@bprogress/core/css' // 进度条样式
-
-const router = useRouter();
-
-if (inBrowser) {
-  BProgress.configure({
-    easing: "ease-in-out",
-    showSpinner: false,
-    speed: 200,
-    trickleSpeed: 200,
-    positionUsing: "width",
-  })
-  router.onBeforeRouteChange = () => {
-    BProgress.start() // 开始进度条
-  }
-  router.onAfterRouteChange = () => {
-    BProgress.done() // 停止进度条
-  }
-}
 </script>
 
 <template>
   <DefaultTheme.Layout>
-    <template #doc-before>
-      <span :style="textStyle">
-        ⏰
-        <span :style="colorStyle">{{ text }}</span>
-      </span>
-    </template>
+<!--    <template #doc-before>-->
+<!--      <SpendTime></SpendTime>-->
+<!--    </template>-->
     <template #layout-bottom>
       <RegisterSW />
+    </template>
+    <template #nav-bar-content-after>
+      <NolebaseEnhancedReadabilitiesMenu />
+    </template>
+    <template #nav-screen-content-after>
+      <NolebaseEnhancedReadabilitiesScreenMenu />
     </template>
   </DefaultTheme.Layout>
 </template>

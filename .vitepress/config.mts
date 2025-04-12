@@ -1,11 +1,10 @@
-import {defineConfig, type UserConfig} from 'vitepress'
+import {loadEnv, type ConfigEnv, defineConfig, type UserConfig} from 'vitepress'
 import {withSidebar, VitePressSidebarOptions} from 'vitepress-sidebar';
 import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
 import {groupIconMdPlugin} from 'vitepress-plugin-group-icons'
 import {withI18n} from 'vitepress-i18n';
 import {withPwa} from "@vite-pwa/vitepress";
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
-import {loadEnv, ConfigEnv} from "vite";
 
 const basePath = '/api-doc/'
 const title = "落月API";
@@ -26,6 +25,10 @@ const vitePressConfig = (env): UserConfig => {
     },
     // mpa: true,
     head: [
+      ['script', {
+        src: 'https://jsd.onmicrosoft.cn/npm/oh-my-live2d@0.19.3/dist/index.min.js',
+        'data-global': 'OML2D'
+      }],
       [
         "link",
         {

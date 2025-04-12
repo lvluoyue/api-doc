@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "incremental": false,
-    "typeRoots": ["node_modules/@types", "src/types"],
-    "target": "esnext",
-    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "target": "ESNext",
+    "module": "nodenext",
+    "moduleResolution": "Bundler",
     "lib": ["DOM", "ESNext"],
-    "moduleResolution": "node",
     "types": [
       "vite/client",
       "vitepress",
@@ -20,6 +20,7 @@
   },
   "include": [
     "/.vitepress/**/*.ts",
+    "/.vitepress/**/*.d.ts",
     "/.vitepress/**/*.vue"
   ]
 }
