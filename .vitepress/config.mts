@@ -26,6 +26,9 @@ const vitePressConfig = (env): UserConfig => {
     // mpa: true,
     head: [
       ['script', {
+        src: 'https://at.alicdn.com/t/c/font_4891400_cfrebzhw43.js',
+      }],
+      ['script', {
         src: 'https://jsd.onmicrosoft.cn/npm/oh-my-live2d@0.19.3/dist/index.min.js',
         'data-global': 'OML2D'
       }],
@@ -199,20 +202,6 @@ const vitePressConfig = (env): UserConfig => {
         globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2,moc,json}"], // 匹配需要缓存的文件类型
         runtimeCaching: [
           {
-            urlPattern: /\.(js|html)(\?.*)?/i, // 匹配json后缀
-            handler: "NetworkFirst", // 缓存优先策略
-            options: {
-              cacheName: "docs", // 缓存名称
-              expiration: {
-                maxEntries: 200, // 最大缓存条目数
-                maxAgeSeconds: 60 * 60 * 24 * 3, // 缓存有效期，3天
-              },
-              cacheableResponse: {
-                statuses: [0, 200], // 缓存的响应状态码
-              },
-            },
-          },
-          {
             urlPattern: /^https:\/\/model\.hacxy\.cn\/.*/i, // 匹配需要缓存的 Google 字体
             handler: "CacheFirst", // 缓存优先策略
             options: {
@@ -254,6 +243,20 @@ const vitePressConfig = (env): UserConfig => {
               },
             },
           },
+          {
+            urlPattern: /\.(js|html)(\?.*)?/i, // 匹配json后缀
+            handler: "NetworkFirst", // 缓存优先策略
+            options: {
+              cacheName: "docs", // 缓存名称
+              expiration: {
+                maxEntries: 200, // 最大缓存条目数
+                maxAgeSeconds: 60 * 60 * 24 * 3, // 缓存有效期，3天
+              },
+              cacheableResponse: {
+                statuses: [0, 200], // 缓存的响应状态码
+              },
+            },
+          },
         ],
       },
     },
@@ -271,7 +274,8 @@ const vitePressSidebarConfig: VitePressSidebarOptions = () => {
       useTitleFromFrontmatter: true,
       sortMenusOrderNumericallyFromLink: true,
       includeRootIndexFile: true,
-      manualSortFileNameByPriority: ['指南', '音乐模块', '搜索相关接口', 'index.md']
+      sortFolderTo: 'bottom',
+      manualSortFileNameByPriority: ['指南', '音乐模块', '搜索相关接口']
     },
     {
       documentRootPath: "/src",
@@ -282,9 +286,8 @@ const vitePressSidebarConfig: VitePressSidebarOptions = () => {
       useTitleFromFrontmatter: true,
       sortMenusOrderNumericallyFromLink: true,
       includeRootIndexFile: true,
-      manualSortFileNameByPriority: ['指南', '音乐模块', 'index.md'],
-      removePrefixAfterOrdering: true, //删除前缀，必须与prefixSeparator一起使用
-      prefixSeparator: '.', //删除前缀的符号
+      sortFolderTo: 'bottom',
+      manualSortFileNameByPriority: ['指南', '音乐模块']
     },
     {
       documentRootPath: "/src",
