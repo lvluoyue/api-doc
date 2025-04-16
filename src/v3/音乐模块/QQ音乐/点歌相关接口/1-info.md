@@ -39,14 +39,14 @@
     "code": 0,
     "message": "访问成功",
     "data": {
-        "id": 105648974, //歌曲ID
-        "mid": "0023CVP23SH17s", //歌曲mid
+        "songID": 105648974, //歌曲ID
+        "songMID": "0023CVP23SH17s", //歌曲mid
         "vid": "v00199a1i1e", //mv的vid
-        "song": "梦回还", //歌曲名
+        "title": "梦回还", //歌曲名
         "subtitle": "《狐妖小红娘·王权篇》网络动画片头曲", //副标题
         "album": "狐妖小红娘 动画原声带", //专辑名
         "singer": "呦猫UNEKO", //歌手名（多个歌手以/分割）
-        "singer_list": [ //歌手列表
+        "singerList": [ //歌手列表
             {
                 "id": 1092914, //歌手ID
                 "mid": "003VD9fu3Eh1q4", //歌手mid

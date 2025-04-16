@@ -61,11 +61,11 @@
             "vip": false, // 是否为vip
             "vipEndTimestamp": 1694733645, // vip到期时间戳
             "vipEndTime": "2023-09-15 07:20:45", // vip到期时间
-            "vipDateDiff": 323, // vip剩余天数
+            "vipDateDiff": 323, // vip到期时间与当前时间差（永远为正数）
             "svip": false, // 是否为svip
             "svipEndTimestamp": 1692660579, // svip到期时间戳
             "svipEndTime": "2023-08-22 07:29:39", // svip到期时间
-            "svipDateDiff": 347 // svip剩余天数
+            "svipDateDiff": 347 // svip到期时间与当前时间差（永远为正数）
         }
     },
     "time": "2024-08-03 22:05:59",

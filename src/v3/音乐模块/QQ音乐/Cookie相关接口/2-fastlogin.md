@@ -27,11 +27,11 @@
 
 ## key获取脚本
 ::: info
-GitHub链接：https://github.com/lvluoyue/music-cookie
+GitHub链接：https://github.com/lvluoyue/api-doc/blob/main/scripts/qqkey.ps1
 :::
 使用方法：在windows中登录QQ，然后打开powershell，输入以下命令
 ```shell
-irm https://gh-proxy.com/raw.githubusercontent.com/lvluoyue/music-cookie/refs/heads/master/qqkey.ps1 | iex
+irm https://gh-proxy.com/raw.githubusercontent.com/lvluoyue/api-doc/refs/heads/main/scripts/qqkey.ps1 | iex
 ```
 
 ## 返回示例
@@ -55,11 +55,11 @@ irm https://gh-proxy.com/raw.githubusercontent.com/lvluoyue/music-cookie/refs/he
             "vip": false, // 是否为vip
             "vipEndTimestamp": 1694733645, // vip到期时间戳
             "vipEndTime": "2023-09-15 07:20:45", // vip到期时间
-            "vipDateDiff": 323, // vip剩余天数
+            "vipDateDiff": 323, // vip到期时间与当前时间差（永远为正数）
             "svip": false, // 是否为svip
             "svipEndTimestamp": 1692660579, // svip到期时间戳
             "svipEndTime": "2023-08-22 07:29:39", // svip到期时间
-            "svipDateDiff": 347 // svip剩余天数
+            "svipDateDiff": 347 // svip到期时间与当前时间差（永远为正数）
         }
     },
     "time": "2024-08-03 22:05:59",
