@@ -8,7 +8,7 @@
 - 用于专辑列表搜索，支持分页。
 
 ## 接口地址
--  `GET` `/music/tencent/search/playlist`
+-  `GET` `/music/tencent/search/album`
 
 ## 请求数据类型
 - `application/x-www-form-urlencoded`

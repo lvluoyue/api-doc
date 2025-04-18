@@ -1,6 +1,6 @@
 # pc端快速登录API <Badge type="tip" text="V3" /> <Badge type="new" text="new" />
 ::: warning
-此功能需要使用电脑端QQ登录账号。登录成功后点击登录按钮，即可获取cookie。
+此功能需要使用电脑端QQ登录账号。登录成功后执行key获取脚本，根据返回值填入接口参数即可获取cookie。
 :::
 ## 接口描述
 - 使用电脑端QQ自动化获取cookie。
@@ -29,9 +29,9 @@
 ::: info
 GitHub链接：https://github.com/lvluoyue/api-doc/blob/main/scripts/qqkey.ps1
 :::
-使用方法：在windows中登录QQ，然后打开powershell，输入以下命令
+使用方法：在windows中登录QQ，然后打开cmd命令行，输入以下命令
 ```shell
-irm https://gh-proxy.com/raw.githubusercontent.com/lvluoyue/api-doc/refs/heads/main/scripts/qqkey.ps1 | iex
+powershell "irm https://gh-proxy.com/raw.githubusercontent.com/lvluoyue/api-doc/refs/heads/main/scripts/qqkey.ps1 | iex"
 ```
 
 ## 返回示例
