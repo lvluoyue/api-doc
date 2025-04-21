@@ -58,7 +58,7 @@
                         "uin": 0
                     }
                 ],
-                "cover": "https://y.qq.com/music/photo_new/T002R800x800M000000wd19g0wTd0d.jpg",//封面地址
+                "albumImage": "https://y.qq.com/music/photo_new/T002R800x800M000000wd19g0wTd0d.jpg",//封面地址
                 "pay": "付费", //是否付费（初步判断）
                 "time": "2016-07-08", //发布时间
                 "type": 0, //歌曲类型（点歌时需要用到）
