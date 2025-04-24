@@ -29,7 +29,7 @@ const vitePressConfig = (env): UserConfig => {
         src: 'https://at.alicdn.com/t/c/font_4891400_cfrebzhw43.js',
       }],
       ['script', {
-        src: 'https://jsd.onmicrosoft.cn/npm/oh-my-live2d@0.19.3/dist/index.min.js',
+        src: 'https://testingcf.jsdelivr.net/npm/oh-my-live2d@0.19.3/dist/index.min.js',
         'data-global': 'OML2D'
       }],
       [
