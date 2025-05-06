@@ -18,7 +18,7 @@ const vitePressConfig = (env): UserConfig => {
     title: title,
     description: description,
     contentProps: {
-      a: 'b'
+      ...env
     },
     sitemap: {
       hostname: 'https://doc.vkeys.cn'
@@ -80,6 +80,7 @@ const vitePressConfig = (env): UserConfig => {
       ],
       nav: [
         {text: '介绍', link: '/jieshao'},
+        {text: 'MCP服务器', link: '/mcp'},
         {
           text: '版本',
           items: [

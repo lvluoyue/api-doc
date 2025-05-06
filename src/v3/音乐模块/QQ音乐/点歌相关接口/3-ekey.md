@@ -8,27 +8,26 @@
 - 此接口可以根据音乐id或mid获取QQ音乐加密链接以及相关信息。
 
 ## 接口地址
--  `GET` `/music/tencent/song/link`
+-  `GET` `/music/tencent/song/ekey`
 
 ## 请求数据类型
 - `application/x-www-form-urlencoded`
 
 ## 请求示例
-- https://api.vkeys.cn/music/tencent/song/link?id=105648974
-- https://api.vkeys.cn/music/tencent/song/link?mid=0023CVP23SH17s
-- https://api.vkeys.cn/music/tencent/song/link?mid=0023CVP23SH17s&quality=8
+- https://api.vkeys.cn/music/tencent/song/ekey?id=105648974
+- https://api.vkeys.cn/music/tencent/song/ekey?mid=0023CVP23SH17s
+- https://api.vkeys.cn/music/tencent/song/ekey?mid=0023CVP23SH17s&quality=8
 
 ## 请求参数
 
 <div class="table-overflow">
 
-| 参数名     | 是否必选 |  数据类型  | 说明                          |
-|:--------|:----:|:------:|:----------------------------|
-| id      |  否   |  int   | 根据音乐id获取音乐链接，id与mid选择其中一个即可 |
-| mid     |  否   | string | 根据音乐id获取音乐链接，id与mid选择其中一个即可 |
-| quality |  否   |  int   | 最大支持音质，默认最大                 |
-| type    |  否   |  int   | 歌曲类型，默认为0                   |
-| ekey    |  否   |  bool  | 是否获取加密的音乐链接                 |
+| 参数名     | 是否必选 |  数据类型  | 默认值  | 说明                          |
+|:--------|:----:|:------:|:----:|:----------------------------|
+| id      |  否   |  int   | null | 根据音乐id获取音乐链接，id与mid选择其中一个即可 |
+| mid     |  否   | string | null | 根据音乐id获取音乐链接，id与mid选择其中一个即可 |
+| quality |  否   |  int   |  14  | 音质ID，不会降级                   |
+| type    |  否   |  int   |  1   | 歌曲类型                        |
 
 </div>
 
@@ -79,7 +78,6 @@
 ## 关于ekey
 - ekey是加密音乐文件的密钥，可使用解密网站获取对应的解密文件
 - ekey解密网站：https://um-react.netlify.app/
-
 
 ## 返回示例
 ``` json [geturl.json]

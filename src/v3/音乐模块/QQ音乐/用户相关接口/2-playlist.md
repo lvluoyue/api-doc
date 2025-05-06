@@ -1,4 +1,4 @@
-# 歌曲信息及音质列表API <Badge type="tip" text="V3" /> <Badge type="new" text="new" />
+# 获取用户收藏API <Badge type="tip" text="V3" />
 
 ::: danger
 此接口仍在开发中，在此期间接口可能会经常变更，不建议使用。
@@ -10,7 +10,7 @@
 
 ## 接口地址
 
-- `GET` `/music/tencent/song/info`
+- `GET` `/music/tencent/user/playlist`
 
 ## 请求数据类型
 
@@ -18,18 +18,15 @@
 
 ## 请求示例
 
-- https://api.vkeys.cn/music/tencent/song/info?id=105648974
-- https://api.vkeys.cn/music/tencent/song/info?mid=0023CVP23SH17s
+- https://api.vkeys.cn/music/tencent/user/playlist?uin=1569097443
 
 ## 请求参数
 
 <div class="table-overflow">
 
-| 参数名  | 是否必选 |  数据类型  | 默认值  | 说明                          |
-|:-----|:----:|:------:|:----:|:----------------------------|
-| id   |  否   |  int   | null | 根据音乐id获取音乐链接，id与mid选择其中一个即可 |
-| mid  |  否   | string | null | 根据音乐id获取音乐链接，id与mid选择其中一个即可 |
-| type |  否   |  int   |  1   | 歌曲类型                        |
+| 参数名 | 是否必选 |  数据类型  | 默认值 | 说明  |
+|:----|:----:|:------:|:---:|:----|
+| uin |  是   |  int   |  /  | QQ号 |
 
 </div>
 
