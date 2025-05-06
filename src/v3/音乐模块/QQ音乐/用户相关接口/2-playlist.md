@@ -25,7 +25,7 @@
 <div class="table-overflow">
 
 | 参数名 | 是否必选 |  数据类型  | 默认值 | 说明  |
-|:----|:----:|:------:|:---:|:----|
+|:---:|:----:|:------:|:---:|:----|
 | uin |  是   |  int   |  /  | QQ号 |
 
 </div>
@@ -37,138 +37,123 @@
     "code": 0,
     "message": "访问成功",
     "data": {
-        "songID": 105648974, //歌曲ID
-        "songMID": "0023CVP23SH17s", //歌曲mid
-        "vid": "v00199a1i1e", //mv的vid
-        "title": "梦回还", //歌曲名
-        "subtitle": "《狐妖小红娘·王权篇》网络动画片头曲", //副标题
-        "album": "狐妖小红娘 动画原声带", //专辑名
-        "singer": "呦猫UNEKO", //歌手名（多个歌手以/分割）
-        "singerList": [ //歌手列表
+        "likeSong": {
+            "tid": 1754192231,
+            "uin": "1569097443",
+            "nick": "",
+            "title": "我喜欢",
+            "image": "http://y.gtimg.cn/mediastyle/y/img/cover_love_300.jpg",
+            "songNum": 442,
+            "createTime": 1746534001,
+            "updateTime": 1745261358
+        },
+        "myDiss": [
             {
-                "id": 1092914, //歌手ID
-                "mid": "003VD9fu3Eh1q4", //歌手mid
-                "name": "呦猫UNEKO", //歌手名
-                "pmid": "",
-                "title": "呦猫UNEKO", //歌手名
-                "type": 1,
-                "uin": 0
+                "tid": 8315602051,
+                "uin": "1569097443",
+                "nick": "",
+                "title": "水·花",
+                "image": "",
+                "songNum": 11,
+                "createTime": 1642052979,
+                "updateTime": 1665127741
+            },
+            {
+                "tid": 8026554234,
+                "uin": "1569097443",
+                "nick": "",
+                "title": "aa",
+                "image": "http://y.gtimg.cn/music/photo_new/T002R500x500M000002DbpNa1zRNqa.jpg?n=1",
+                "songNum": 25,
+                "createTime": 1623328208,
+                "updateTime": 1690696093
+            },
+            {
+                "tid": 6751322298,
+                "uin": "1569097443",
+                "nick": "",
+                "title": "好听的",
+                "image": "http://y.gtimg.cn/music/photo_new/T002R500x500M000003s6uBn238PvQ.jpg?n=1",
+                "songNum": 58,
+                "createTime": 1551270593,
+                "updateTime": 1690307616
             }
         ],
-        "cover": "https://y.qq.com/music/photo_new/T002R800x800M000000wd19g0wTd0d.jpg",//封面地址
-        "pay": "付费", //是否付费（初步判断）
-        "time": "2016-07-08", //发布时间
-        "type": 0, //歌曲类型（点歌时需要用到）
-        "bpm": 84, //BPM值
-        "content": "",
-        "grp": [], //多版本列表，此接口无效
-        "qualityInfo": [// 音质列表
+        "likeDiss": [
             {
-                "type": 0, // 音质id，点歌时需要
-                "size": 960887, //文件大小，0为无效
-                "quality": "音乐试听", // 音质名
-                "file": "RS020023CVP23SH17s.mp3" // 文件名
+                "tid": 7853791967,
+                "uin": "2830388142",
+                "nick": "墨雨",
+                "title": "妄想症系列",
+                "image": "http://qpic.y.qq.com/music_cover/EEIuGFXJcibxA80v5Hc1RNhwkFJ8zwicIQkIG2hyGSUYrGkRvxp8J6NQ/600?n=1",
+                "songNum": 10,
+                "createTime": 1610299800,
+                "updateTime": 1610830387
             },
             {
-                "type": 1,
-                "size": 0,
-                "quality": "有损音质",
-                "file": "C100003t4TGX46UGp7.m4a"
+                "tid": 7793074360,
+                "uin": "2993552933",
+                "nick": "早睡早起",
+                "title": "〖洛天依〗恋爱理论",
+                "image": "http://qpic.y.qq.com/music_cover/3o3EV9KZWcK7icPUAuETxpQ25J4GZ7icmbygc90z8jTvsj4NtBeAmTPw/600?n=1",
+                "songNum": 8,
+                "createTime": 1606229589,
+                "updateTime": 1611923682
             },
             {
-                "type": 2,
-                "size": 1522964,
-                "quality": "有损音质",
-                "file": "C200003t4TGX46UGp7.m4a"
+                "tid": 7670951918,
+                "uin": "2256154299",
+                "nick": "轻痕无迹",
+                "title": "国风电子|洛天依的华夏情怀",
+                "image": "http://qpic.y.qq.com/music_cover/xnI1ZgbxtYofBy9PIcmqEP89CZnZgtPxBCaSHXGeqy3aPbnqCiby9bw/600?n=1",
+                "songNum": 44,
+                "createTime": 1596960244,
+                "updateTime": 1648646235
             },
             {
-                "type": 3,
-                "size": 3043806,
-                "quality": "有损音质",
-                "file": "C400003t4TGX46UGp7.m4a"
+                "tid": 7627299556,
+                "uin": "2256154299",
+                "nick": "轻痕无迹",
+                "title": "[洛天依]洛殿下歌曲精选之古风集",
+                "image": "http://qpic.y.qq.com/music_cover/xnI1ZgbxtYofBy9PIcmqEP6TVVtKvveUMAaeDGD1Avz9NjUNjH3bWg/600?n=1",
+                "songNum": 111,
+                "createTime": 1593957908,
+                "updateTime": 1715354975
             },
             {
-                "type": 4,
-                "size": 6048661,
-                "quality": "标准音质",
-                "file": "C600003t4TGX46UGp7.m4a"
+                "tid": 6954294851,
+                "uin": "1181707581",
+                "nick": "妮蔻玲可莉",
+                "title": "可爱到爆炸 800首萌音的洗脑",
+                "image": "http://qpic.y.qq.com/music_cover/S6tZcNpwzyEmry2LnEzibR3HHiam4mErbmtFjtEzFIlyrJtj7kqtwPicA/600?n=1",
+                "songNum": 825,
+                "createTime": 1556417079,
+                "updateTime": 1703831303
             },
             {
-                "type": 5,
-                "size": 3025258,
-                "quality": "标准音质",
-                "file": "O400003t4TGX46UGp7.ogg"
+                "tid": 6937788130,
+                "uin": "1812948313",
+                "nick": "听风Xyi",
+                "title": "国风动漫 · 若忘此生来世忆",
+                "image": "http://qpic.y.qq.com/music_cover/qH8rLHHhL8O8Iibm56uPzJxicMIUJV96BOCHh79SuW8JA50SMsDMZXVg/600?n=1",
+                "songNum": 28,
+                "createTime": 1555301126,
+                "updateTime": 1631209275
             },
             {
-                "type": 6,
-                "size": 4001341,
-                "quality": "标准音质",
-                "file": "M500003t4TGX46UGp7.mp3"
-            },
-            {
-                "type": 7,
-                "size": 6127530,
-                "quality": "标准音质",
-                "file": "O600003t4TGX46UGp7.ogg"
-            },
-            {
-                "type": 8,
-                "size": 10003026,
-                "quality": "HQ高音质",
-                "file": "M800003t4TGX46UGp7.mp3"
-            },
-            {
-                "type": 9,
-                "size": 10870748,
-                "quality": "HQ高音质",
-                "file": "O800003t4TGX46UGp7.ogg"
-            },
-            {
-                "type": 10,
-                "size": 58775435,
-                "quality": "SQ无损音质",
-                "file": "F000003t4TGX46UGp7.flac"
-            },
-            {
-                "type": 11,
-                "size": 0,
-                "quality": "Hi-Res音质",
-                "file": "RS01003t4TGX46UGp7.flac"
-            },
-            {
-                "type": 12,
-                "size": 0,
-                "quality": "杜比全景声",
-                "file": "D001003t4TGX46UGp7.mp4"
-            },
-            {
-                "type": 13,
-                "size": 32270821,
-                "quality": "臻品全景声",
-                "file": "Q000000Ok4Fl4ckn34.flac"
-            },
-            {
-                "type": 14,
-                "size": 188505804,
-                "quality": "臻品母带2.0",
-                "file": "AI00004XGZCG3gCeKc.flac"
-            },
-            {
-                "type": 15,
-                "size": 21475189,
-                "quality": "AI伴奏消音(试验)",
-                "file": "O801003YeTqm3yCpZQ.ogg"
-            },
-            {
-                "type": 16,
-                "size": 82846386,
-                "quality": "AI人声消音(试验)",
-                "file": "Q001000Ok4Fl4ckn34.flac"
+                "tid": 1167624049,
+                "uin": "3050999021",
+                "nick": "淡白的阳光",
+                "title": "「ACG」洛天依古风曲大盘点",
+                "image": "http://qpic.y.qq.com/music_cover/az4TLJ60PVdO54ZsMQeKYooXkEGq2GlKGpI5AXclxIpgoC0BLByHAQ/600?n=1",
+                "songNum": 115,
+                "createTime": 1498044379,
+                "updateTime": 1659892414
             }
         ]
     },
-    "time": "2025-04-08 14:29:43",
-    "pid": 11444,
+    "time": "2025-05-06 20:20:02",
+    "pid": 40,
     "tips": "欢迎使用落月API-V3"
 }
 ```

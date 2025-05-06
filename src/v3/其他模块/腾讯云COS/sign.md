@@ -11,7 +11,7 @@
 - `application/x-www-form-urlencoded`
 
 ## 请求示例
-- https://api.vkeys.cn/tool/cos/sign?sha1=1569097443&md5=&size=123456789
+- https://api.vkeys.cn/tool/cos/sign?sha1=4fbfbc28bbc4a67850fa90823fcea389fcfcd48d&md5=f853b39f8d7c2e617dbde77dca66d413&size=51458
 
 ## 请求参数
 
@@ -28,34 +28,26 @@
 ## 返回示例
 ``` json
 {
-    "code": 200,
-    "message": "请求成功！",
+    "code": 0,
+    "message": "访问成功",
     "data": {
-        "cookie": {
-            "uin": 1569097443, // 账号ID
-            "musickey": "Q_H_L_63kfNuk1fUK-t9Rshh-NGQrRsuQmM8eCpOAo4TtgtNtGBY7_4KESYJVVrXh35gdQrsbIJhHLcKGsNEjHRzwHMZ-CPaFB-i6gAsgcCLTYB-4KIh_SwMdTWUVWrZf-LyAhajDfpv5uwvu0-k0KiS3w",// token字段
-            "refresh_token": "", // 刷新key
-            "refresh_key": "", // 刷新token
-            "musickeyCreateTimestamp": 1722693959, // token创建时间戳
-            "musickeyCreateTime": "2024-08-03 22:05:59", // token创建时间
-            "keyExpiresIn": 259200, // token过期时间
-            "musickeyLastTimestamp": 1722953159, // token最后更新时间戳
-            "musickeyLastTime": "2024-08-06 22:05:59" // token最后更新时间
+        "url": "https://music-file-1258344705.cos.ap-guangzhou.myqcloud.com/songlist/p/1147c/4fbfbc28bbc4a67850fa90823fcea389fcfcd48d_c902.png",
+        "method": "PUT",
+        "header": {
+            "Host": "music-file-1258344705.cos.ap-guangzhou.myqcloud.com",
+            "User-Agent": "workerman/http-client",
+            "Connection": "keep-alive",
+            "Content-Length": "51458",
+            "content-md5": "+FOzn418LmF9ved9ymbUEw==",
+            "x-cos-security-token": "GIzUbkNQfZH0Q4V27p2vHL75iRJ7tbha95c7097b1d14c7841cc356f2b5f5fde5nmIWL_hRE2_mVvAGwAqCv3Rrfhx3s6nAKSgHxZq1vawdWHrH7YnX1NM7UPEgPSMgE466zts5CRzMbgFfEYBv0AEzh5iKkfS0kuQVudbrPNGloJwSGh9ZJg5lvIB7J-dt_rbtlqqImTNrvMPpFJmB9Ugyus4WJk_TVieUUafxixaXvNjhItDeRnb6xa403LV33dSbNaa_1dq5AmNw0wEVy2scKrtRtChNyn1G3TndRcUcqfxrYbbfT2NdGoKR4-kPVPmp8qkhOWzIPLv9ss7pMfJ6jR8xVZNF6cVgR7bdADUuMHMvRZmlwOhSaW7y3gIfaLcKLEzOVM0Jfa-k8SUJ2V5JUCdMu7nxYlQMvUuycn-AqOEAlM8UNtcC7pDexu_D3aR8zsEGtaPjVID5eSqEphjwg93zPsi6YS83uGrwqyfaj5vAewuOuqEHW-_GDbiUF21ebmGmFysI0V6U6UiwOsg9twv5AM4PFM_Snu8TNEG8u6CYUTsqsccAtYHaoD_Gg-IDqevp2tHm-wG29LGHgMIXhAimJXRz8E2NS_bLUm6vUSypPApEuwk8c-T-d7sNKKQ3NLNRHnQXfwV01H2eFLhZ4MZ2_V7qCnH-oi7CHjnbo_yJpY9nix2zHQ-QyL8nHGQ3O7p1F7GdcjfZNueFOUN_lmOyxsrwrEBaCxaeSFQ0sq0qClUqnZAy6UoHKCqjmymsCFp3IKJbok5TAXPSsSEvZXOvYMcwtiQkGcAjVBpFlc43u-f-1lRqrcCLwZgW3WXnDB90M2QNfejIb19j_AVX3A9IpZk8xUuQmA0SsEiID55VQMg01MgCVPfp-8M21xVqDiVi3VAYlR-nu4aiBJzPJ9SfTUwDDqP3Yz4LCl6vsrxgFk3hHgMNy1juD28za_K8D1qgaaT8z53uc9vLlkWc6Wky_Zffv_cf4f4VIN7myW_si7XHr4_Y4OYshk1TJldOg2BXUsaGaxVEpspnzg48a2xa_GTeGb89V_H1RK7K3F854VYBK3ITRMFD-rCL6rbCMpHR3iBZ3qGuQWAzsQ",
+            "Authorization": "q-sign-algorithm=sha1&q-ak=AKIDT4q2N7IcbGEJoS1J2U7y0eAqY4ndvk3TzzFa_avW2x3vbHMrmWbdtQQmnpTQz-Qp&q-sign-time=1746537582;1746539442&q-key-time=1746537582;1746539442&q-header-list=content-length;content-md5;host;x-cos-security-token&q-url-param-list=&q-signature=cd9d5033f413b66abbc91eae0c16a979bbed50ad"
         },
-        "info": {
-            "vip": false, // 是否为vip
-            "vipEndTimestamp": 1694733645, // vip到期时间戳
-            "vipEndTime": "2023-09-15 07:20:45", // vip到期时间
-            "vipDateDiff": 323, // vip到期时间与当前时间差（永远为正数）
-            "svip": false, // 是否为svip
-            "svipEndTimestamp": 1692660579, // svip到期时间戳
-            "svipEndTime": "2023-08-22 07:29:39", // svip到期时间
-            "svipDateDiff": 347 // svip到期时间与当前时间差（永远为正数）
-        }
+        "CDN": "https://music-file.y.qq.com/songlist/p/1147c/4fbfbc28bbc4a67850fa90823fcea389fcfcd48d_c902.png"
     },
-    "time": "2024-08-03 22:05:59",
-    "pid": 14,
-    "tips": "欢迎使用API-Server"
+    "time": "2025-05-06 21:20:42",
+    "pid": 25,
+    "tips": "欢迎使用落月API-V3"
 }
 ```
 
+## 前端示例(需解决跨域问题)

@@ -20,13 +20,13 @@
 
 <div class="table-overflow">
 
-|      参数名      | 是否必选 |  数据类型  | 默认值  | 说明                              |
-|:-------------:|:----:|:------:|:----:|:--------------------------------|
-|      uin      |  是   |  int   |  /   | 你的QQ号                           |
-|   music_key   |  是   | string |  /   | 账号key，带有Q_H_L&#95;或W_X&#95;的字符串 |
-|  refresh_key  |  否   | string | null | CK刷新key，已失效cookie带上这个刷新         |
-| refresh_token |  否   | string | null | CK刷新令牌，已失效cookie带上这个刷新          |
-
+|      参数名      | 是否必选 |  数据类型  |  默认值  | 说明                              |
+|:-------------:|:----:|:------:|:-----:|:--------------------------------|
+|      uin      |  是   |  int   |   /   | 你的QQ号                           |
+|   music_key   |  是   | string |   /   | 账号key，带有Q_H_L&#95;或W_X&#95;的字符串 |
+|  refresh_key  |  否   | string | null  | CK刷新key，已失效cookie带上这个刷新         |
+| refresh_token |  否   | string | null  | CK刷新令牌，已失效cookie带上这个刷新          |
+|     save      |  否   |  bool  | false | 是否将cookie保存在服务器中                |
 </div>
 
 ## 区分微信账号和QQ账号

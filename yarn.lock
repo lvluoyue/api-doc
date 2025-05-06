@@ -948,10 +948,10 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
-"@bprogress/core@^1.3.3":
-  version "1.3.3"
-  resolved "https://registry.npmmirror.com/@bprogress/core/-/core-1.3.3.tgz#b44abf6471cd87d25c6167d8cfaf980ea8c68be3"
-  integrity sha512-Vz9vzZE8xvfkgY09e0S6kzNz/ev/2lUw7A/z0TW7N0ZBG9xmVXrzSsFe3uvypxDa5ltn+xLBtfDtxBc8KsrvBQ==
+"@bprogress/core@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.npmmirror.com/@bprogress/core/-/core-1.3.4.tgz#4d4b90300d8a3b8d56a1a9876daa3fd4243aeabb"
+  integrity sha512-q/AqpurI/1uJzOrQROuZWixn/+ARekh+uvJGwLCP6HQ/EqAX4SkvNf618tSBxL4NysC0MwqAppb/mRw6Tzi61w==
 
 "@docsearch/css@3.9.0", "@docsearch/css@^3.9.0":
   version "3.9.0"
@@ -1273,57 +1273,57 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nolebase/ui@^2.16.0":
-  version "2.16.0"
-  resolved "https://registry.npmmirror.com/@nolebase/ui/-/ui-2.16.0.tgz#33f9fd1e7e1c0fde6d46ec1246d01df8caa790f0"
-  integrity sha512-P/Q5ImarXUfgoqk2bV5FFfSVnHPpONd/HhkUaKxyWlL9TkNF+9PDyn/EztplnwBwzfd0sGX9L7wEP/Zd5PY38A==
+"@nolebase/ui@^2.17.0":
+  version "2.17.0"
+  resolved "https://registry.npmmirror.com/@nolebase/ui/-/ui-2.17.0.tgz#f48b54d5ddc61c6ef13d8845d48b6cc9c74857a7"
+  integrity sha512-t0zr9FiUMju7W/iL/BzX+JuZZz0UgAC1ZMN4VKAOtRIUaQhPjE3LZMqfOrrsWhKNT8uTY7CVIcIzSulPuAe1og==
   dependencies:
     "@iconify-json/octicon" "^1.2.5"
     less "^4.3.0"
     vue "^3.5.13"
 
-"@nolebase/vitepress-plugin-enhanced-mark@^2.16.0":
-  version "2.16.0"
-  resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-enhanced-mark/-/vitepress-plugin-enhanced-mark-2.16.0.tgz#bb2d29f3f638a65eda3c5db8bc75a25bf476e12f"
-  integrity sha512-TKHf7TR14D8WTfEcbhctNIWv4x4R/pQVzP2YU13mccM4tH4FQv4/E4/w1jQ6r6KTQo+cyBhh9zhtELjuH23y1Q==
+"@nolebase/vitepress-plugin-enhanced-mark@^2.17.0":
+  version "2.17.0"
+  resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-enhanced-mark/-/vitepress-plugin-enhanced-mark-2.17.0.tgz#cc39d49c929e258f3bc10261e6b86af888364247"
+  integrity sha512-dfs6WNJ+8cph2xsoHhSQBoRDVeCRmOLqkhdDOnfoQv9S6E7eTZUsr6M/h3KYr45h8PLnp62jjcI7YB7iw5htkQ==
   dependencies:
     less "^4.3.0"
 
-"@nolebase/vitepress-plugin-enhanced-readabilities@^2.16.0":
-  version "2.16.0"
-  resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-enhanced-readabilities/-/vitepress-plugin-enhanced-readabilities-2.16.0.tgz#02b41e1c3abde7d883ba07c7238786f71700434b"
-  integrity sha512-taiG848UWFQizhJhbvbcpMo1JjA80aL4InepEcSJ9DxN7lNKJvqIOusSB6TjCBkNt8uY6jijSxjTI1tdec+ecg==
+"@nolebase/vitepress-plugin-enhanced-readabilities@^2.17.0":
+  version "2.17.0"
+  resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-enhanced-readabilities/-/vitepress-plugin-enhanced-readabilities-2.17.0.tgz#800008dc99d6587b581a0014e69297df328f4b4a"
+  integrity sha512-3vSSK/sz9X3pnLFxch7o/WdQ7wOtxun16Jw6OnYxyS7tmGc7oLhR1GJaGBMkGCIkz8RX0Dwic4+HaExWZBPM/A==
   dependencies:
     "@iconify-json/carbon" "^1.2.8"
     "@iconify-json/icon-park-outline" "^1.2.2"
-    "@nolebase/ui" "^2.16.0"
+    "@nolebase/ui" "^2.17.0"
     less "^4.3.0"
 
-"@nolebase/vitepress-plugin-git-changelog@^2.16.0":
-  version "2.16.0"
-  resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-git-changelog/-/vitepress-plugin-git-changelog-2.16.0.tgz#e41cb509f7eb6271445f43a0b2a404f117026eaa"
-  integrity sha512-ztCK3Jk2UybktWl5O64hPJKsJEG1aqaxRRoI3CeiA3N1xOd+FC6iCHKj/rM6mzeEUqUcYzcj+EZ1YBUAqsfnag==
+"@nolebase/vitepress-plugin-git-changelog@^2.17.0":
+  version "2.17.0"
+  resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-git-changelog/-/vitepress-plugin-git-changelog-2.17.0.tgz#ec4609cce7a658ea13fe81f0a2cc0d0a369b3db1"
+  integrity sha512-XuJY/rVOltgKvfnjTtkCOTcgNsYPIAlAtUAz3kAmyVs9OQ5/26bBNhmAlcoOm5knQ6jffTTXLqSFQJcpA52Q0Q==
   dependencies:
     "@iconify-json/octicon" "^1.2.5"
-    "@nolebase/ui" "^2.16.0"
+    "@nolebase/ui" "^2.17.0"
     colorette "^2.0.20"
     date-fns "^4.1.0"
     defu "^6.1.4"
-    es-toolkit "^1.34.1"
+    es-toolkit "^1.36.0"
     execa "^9.5.2"
     globby "^14.1.0"
     gray-matter "^4.0.3"
     less "^4.3.0"
     uncrypto "^0.1.3"
 
-"@nolebase/vitepress-plugin-page-properties@^2.16.0":
-  version "2.16.0"
-  resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-page-properties/-/vitepress-plugin-page-properties-2.16.0.tgz#d72d49dec397a85b4149b9ec6d709a0753ee6f21"
-  integrity sha512-2nNIUOXsYM2t9JTSyHv8ALaaM4DLvhdnZFwyXuf4jRGVwSHcYdOdADMGEmVc59ar0tqR+110uV20TL7BiR8Rtg==
+"@nolebase/vitepress-plugin-page-properties@^2.17.0":
+  version "2.17.0"
+  resolved "https://registry.npmmirror.com/@nolebase/vitepress-plugin-page-properties/-/vitepress-plugin-page-properties-2.17.0.tgz#c91bfec59d2ca755682842291b9bf5f6e1efe2b4"
+  integrity sha512-vwpHlYsk+HImz/X/hWsmoCijBP1MURsyhSyMCL2PY6R3jWPRxH0fXJiYAgtTwuGxSPO+lxVrYa1xESGg9R5h+w==
   dependencies:
     "@iconify-json/icon-park-outline" "^1.2.2"
     "@iconify-json/octicon" "^1.2.5"
-    "@nolebase/ui" "^2.16.0"
+    "@nolebase/ui" "^2.17.0"
     date-fns "^4.1.0"
     gray-matter "^4.0.3"
     less "^4.3.0"
@@ -1393,100 +1393,200 @@
   resolved "https://registry.npmmirror.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.40.0.tgz#d964ee8ce4d18acf9358f96adc408689b6e27fe3"
   integrity sha512-+Fbls/diZ0RDerhE8kyC6hjADCXA1K4yVNlH0EYfd2XjyH0UGgzaQ8MlT0pCXAThfxv3QUAczHaL+qSv1E4/Cg==
 
+"@rollup/rollup-android-arm-eabi@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.40.2.tgz#c228d00a41f0dbd6fb8b7ea819bbfbf1c1157a10"
+  integrity sha512-JkdNEq+DFxZfUwxvB58tHMHBHVgX23ew41g1OQinthJ+ryhdRk67O31S7sYw8u2lTjHUPFxwar07BBt1KHp/hg==
+
 "@rollup/rollup-android-arm64@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.40.0.tgz#9b5e130ecc32a5fc1e96c09ff371743ee71a62d3"
   integrity sha512-PPA6aEEsTPRz+/4xxAmaoWDqh67N7wFbgFUJGMnanCFs0TV99M0M8QhhaSCks+n6EbQoFvLQgYOGXxlMGQe/6w==
+
+"@rollup/rollup-android-arm64@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.40.2.tgz#e2b38d0c912169fd55d7e38d723aada208d37256"
+  integrity sha512-13unNoZ8NzUmnndhPTkWPWbX3vtHodYmy+I9kuLxN+F+l+x3LdVF7UCu8TWVMt1POHLh6oDHhnOA04n8oJZhBw==
 
 "@rollup/rollup-darwin-arm64@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.40.0.tgz#ef439182c739b20b3c4398cfc03e3c1249ac8903"
   integrity sha512-GwYOcOakYHdfnjjKwqpTGgn5a6cUX7+Ra2HeNj/GdXvO2VJOOXCiYYlRFU4CubFM67EhbmzLOmACKEfvp3J1kQ==
 
+"@rollup/rollup-darwin-arm64@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.40.2.tgz#1fddb3690f2ae33df16d334c613377f05abe4878"
+  integrity sha512-Gzf1Hn2Aoe8VZzevHostPX23U7N5+4D36WJNHK88NZHCJr7aVMG4fadqkIf72eqVPGjGc0HJHNuUaUcxiR+N/w==
+
 "@rollup/rollup-darwin-x64@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.40.0.tgz#d7380c1531ab0420ca3be16f17018ef72dd3d504"
   integrity sha512-CoLEGJ+2eheqD9KBSxmma6ld01czS52Iw0e2qMZNpPDlf7Z9mj8xmMemxEucinev4LgHalDPczMyxzbq+Q+EtA==
+
+"@rollup/rollup-darwin-x64@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.40.2.tgz#818298d11c8109e1112590165142f14be24b396d"
+  integrity sha512-47N4hxa01a4x6XnJoskMKTS8XZ0CZMd8YTbINbi+w03A2w4j1RTlnGHOz/P0+Bg1LaVL6ufZyNprSg+fW5nYQQ==
 
 "@rollup/rollup-freebsd-arm64@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-freebsd-arm64/-/rollup-freebsd-arm64-4.40.0.tgz#cbcbd7248823c6b430ce543c59906dd3c6df0936"
   integrity sha512-r7yGiS4HN/kibvESzmrOB/PxKMhPTlz+FcGvoUIKYoTyGd5toHp48g1uZy1o1xQvybwwpqpe010JrcGG2s5nkg==
 
+"@rollup/rollup-freebsd-arm64@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-freebsd-arm64/-/rollup-freebsd-arm64-4.40.2.tgz#91a28dc527d5bed7f9ecf0e054297b3012e19618"
+  integrity sha512-8t6aL4MD+rXSHHZUR1z19+9OFJ2rl1wGKvckN47XFRVO+QL/dUSpKA2SLRo4vMg7ELA8pzGpC+W9OEd1Z/ZqoQ==
+
 "@rollup/rollup-freebsd-x64@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-freebsd-x64/-/rollup-freebsd-x64-4.40.0.tgz#96bf6ff875bab5219c3472c95fa6eb992586a93b"
   integrity sha512-mVDxzlf0oLzV3oZOr0SMJ0lSDd3xC4CmnWJ8Val8isp9jRGl5Dq//LLDSPFrasS7pSm6m5xAcKaw3sHXhBjoRw==
+
+"@rollup/rollup-freebsd-x64@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-freebsd-x64/-/rollup-freebsd-x64-4.40.2.tgz#28acadefa76b5c7bede1576e065b51d335c62c62"
+  integrity sha512-C+AyHBzfpsOEYRFjztcYUFsH4S7UsE9cDtHCtma5BK8+ydOZYgMmWg1d/4KBytQspJCld8ZIujFMAdKG1xyr4Q==
 
 "@rollup/rollup-linux-arm-gnueabihf@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm-gnueabihf/-/rollup-linux-arm-gnueabihf-4.40.0.tgz#d80cd62ce6d40f8e611008d8dbf03b5e6bbf009c"
   integrity sha512-y/qUMOpJxBMy8xCXD++jeu8t7kzjlOCkoxxajL58G62PJGBZVl/Gwpm7JK9+YvlB701rcQTzjUZ1JgUoPTnoQA==
 
+"@rollup/rollup-linux-arm-gnueabihf@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm-gnueabihf/-/rollup-linux-arm-gnueabihf-4.40.2.tgz#819691464179cbcd9a9f9d3dc7617954840c6186"
+  integrity sha512-de6TFZYIvJwRNjmW3+gaXiZ2DaWL5D5yGmSYzkdzjBDS3W+B9JQ48oZEsmMvemqjtAFzE16DIBLqd6IQQRuG9Q==
+
 "@rollup/rollup-linux-arm-musleabihf@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm-musleabihf/-/rollup-linux-arm-musleabihf-4.40.0.tgz#75440cfc1e8d0f87a239b4c31dfeaf4719b656b7"
   integrity sha512-GoCsPibtVdJFPv/BOIvBKO/XmwZLwaNWdyD8TKlXuqp0veo2sHE+A/vpMQ5iSArRUz/uaoj4h5S6Pn0+PdhRjg==
+
+"@rollup/rollup-linux-arm-musleabihf@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm-musleabihf/-/rollup-linux-arm-musleabihf-4.40.2.tgz#d149207039e4189e267e8724050388effc80d704"
+  integrity sha512-urjaEZubdIkacKc930hUDOfQPysezKla/O9qV+O89enqsqUmQm8Xj8O/vh0gHg4LYfv7Y7UsE3QjzLQzDYN1qg==
 
 "@rollup/rollup-linux-arm64-gnu@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.40.0.tgz#ac527485ecbb619247fb08253ec8c551a0712e7c"
   integrity sha512-L5ZLphTjjAD9leJzSLI7rr8fNqJMlGDKlazW2tX4IUF9P7R5TMQPElpH82Q7eNIDQnQlAyiNVfRPfP2vM5Avvg==
 
+"@rollup/rollup-linux-arm64-gnu@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.40.2.tgz#fa72ebddb729c3c6d88973242f1a2153c83e86ec"
+  integrity sha512-KlE8IC0HFOC33taNt1zR8qNlBYHj31qGT1UqWqtvR/+NuCVhfufAq9fxO8BMFC22Wu0rxOwGVWxtCMvZVLmhQg==
+
 "@rollup/rollup-linux-arm64-musl@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm64-musl/-/rollup-linux-arm64-musl-4.40.0.tgz#74d2b5cb11cf714cd7d1682e7c8b39140e908552"
   integrity sha512-ATZvCRGCDtv1Y4gpDIXsS+wfFeFuLwVxyUBSLawjgXK2tRE6fnsQEkE4csQQYWlBlsFztRzCnBvWVfcae/1qxQ==
+
+"@rollup/rollup-linux-arm64-musl@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-arm64-musl/-/rollup-linux-arm64-musl-4.40.2.tgz#2054216e34469ab8765588ebf343d531fc3c9228"
+  integrity sha512-j8CgxvfM0kbnhu4XgjnCWJQyyBOeBI1Zq91Z850aUddUmPeQvuAy6OiMdPS46gNFgy8gN1xkYyLgwLYZG3rBOg==
 
 "@rollup/rollup-linux-loongarch64-gnu@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-loongarch64-gnu/-/rollup-linux-loongarch64-gnu-4.40.0.tgz#a0a310e51da0b5fea0e944b0abd4be899819aef6"
   integrity sha512-wG9e2XtIhd++QugU5MD9i7OnpaVb08ji3P1y/hNbxrQ3sYEelKJOq1UJ5dXczeo6Hj2rfDEL5GdtkMSVLa/AOg==
 
+"@rollup/rollup-linux-loongarch64-gnu@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-loongarch64-gnu/-/rollup-linux-loongarch64-gnu-4.40.2.tgz#818de242291841afbfc483a84f11e9c7a11959bc"
+  integrity sha512-Ybc/1qUampKuRF4tQXc7G7QY9YRyeVSykfK36Y5Qc5dmrIxwFhrOzqaVTNoZygqZ1ZieSWTibfFhQ5qK8jpWxw==
+
 "@rollup/rollup-linux-powerpc64le-gnu@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-powerpc64le-gnu/-/rollup-linux-powerpc64le-gnu-4.40.0.tgz#4077e2862b0ac9f61916d6b474d988171bd43b83"
   integrity sha512-vgXfWmj0f3jAUvC7TZSU/m/cOE558ILWDzS7jBhiCAFpY2WEBn5jqgbqvmzlMjtp8KlLcBlXVD2mkTSEQE6Ixw==
+
+"@rollup/rollup-linux-powerpc64le-gnu@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-powerpc64le-gnu/-/rollup-linux-powerpc64le-gnu-4.40.2.tgz#0bb4cb8fc4a2c635f68c1208c924b2145eb647cb"
+  integrity sha512-3FCIrnrt03CCsZqSYAOW/k9n625pjpuMzVfeI+ZBUSDT3MVIFDSPfSUgIl9FqUftxcUXInvFah79hE1c9abD+Q==
 
 "@rollup/rollup-linux-riscv64-gnu@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-riscv64-gnu/-/rollup-linux-riscv64-gnu-4.40.0.tgz#5812a1a7a2f9581cbe12597307cc7ba3321cf2f3"
   integrity sha512-uJkYTugqtPZBS3Z136arevt/FsKTF/J9dEMTX/cwR7lsAW4bShzI2R0pJVw+hcBTWF4dxVckYh72Hk3/hWNKvA==
 
+"@rollup/rollup-linux-riscv64-gnu@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-riscv64-gnu/-/rollup-linux-riscv64-gnu-4.40.2.tgz#4b3b8e541b7b13e447ae07774217d98c06f6926d"
+  integrity sha512-QNU7BFHEvHMp2ESSY3SozIkBPaPBDTsfVNGx3Xhv+TdvWXFGOSH2NJvhD1zKAT6AyuuErJgbdvaJhYVhVqrWTg==
+
 "@rollup/rollup-linux-riscv64-musl@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-riscv64-musl/-/rollup-linux-riscv64-musl-4.40.0.tgz#973aaaf4adef4531375c36616de4e01647f90039"
   integrity sha512-rKmSj6EXQRnhSkE22+WvrqOqRtk733x3p5sWpZilhmjnkHkpeCgWsFFo0dGnUGeA+OZjRl3+VYq+HyCOEuwcxQ==
+
+"@rollup/rollup-linux-riscv64-musl@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-riscv64-musl/-/rollup-linux-riscv64-musl-4.40.2.tgz#e065405e67d8bd64a7d0126c931bd9f03910817f"
+  integrity sha512-5W6vNYkhgfh7URiXTO1E9a0cy4fSgfE4+Hl5agb/U1sa0kjOLMLC1wObxwKxecE17j0URxuTrYZZME4/VH57Hg==
 
 "@rollup/rollup-linux-s390x-gnu@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-s390x-gnu/-/rollup-linux-s390x-gnu-4.40.0.tgz#9bad59e907ba5bfcf3e9dbd0247dfe583112f70b"
   integrity sha512-SpnYlAfKPOoVsQqmTFJ0usx0z84bzGOS9anAC0AZ3rdSo3snecihbhFTlJZ8XMwzqAcodjFU4+/SM311dqE5Sw==
 
+"@rollup/rollup-linux-s390x-gnu@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-s390x-gnu/-/rollup-linux-s390x-gnu-4.40.2.tgz#dda3265bbbfe16a5d0089168fd07f5ebb2a866fe"
+  integrity sha512-B7LKIz+0+p348JoAL4X/YxGx9zOx3sR+o6Hj15Y3aaApNfAshK8+mWZEf759DXfRLeL2vg5LYJBB7DdcleYCoQ==
+
 "@rollup/rollup-linux-x64-gnu@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.40.0.tgz#68b045a720bd9b4d905f462b997590c2190a6de0"
   integrity sha512-RcDGMtqF9EFN8i2RYN2W+64CdHruJ5rPqrlYw+cgM3uOVPSsnAQps7cpjXe9be/yDp8UC7VLoCoKC8J3Kn2FkQ==
+
+"@rollup/rollup-linux-x64-gnu@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.40.2.tgz#90993269b8b995b4067b7b9d72ff1c360ef90a17"
+  integrity sha512-lG7Xa+BmBNwpjmVUbmyKxdQJ3Q6whHjMjzQplOs5Z+Gj7mxPtWakGHqzMqNER68G67kmCX9qX57aRsW5V0VOng==
 
 "@rollup/rollup-linux-x64-musl@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.40.0.tgz#8e703e2c2ad19ba7b2cb3d8c3a4ad11d4ee3a282"
   integrity sha512-HZvjpiUmSNx5zFgwtQAV1GaGazT2RWvqeDi0hV+AtC8unqqDSsaFjPxfsO6qPtKRRg25SisACWnJ37Yio8ttaw==
 
+"@rollup/rollup-linux-x64-musl@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.40.2.tgz#fdf5b09fd121eb8d977ebb0fda142c7c0167b8de"
+  integrity sha512-tD46wKHd+KJvsmije4bUskNuvWKFcTOIM9tZ/RrmIvcXnbi0YK/cKS9FzFtAm7Oxi2EhV5N2OpfFB348vSQRXA==
+
 "@rollup/rollup-win32-arm64-msvc@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.40.0.tgz#c5bee19fa670ff5da5f066be6a58b4568e9c650b"
   integrity sha512-UtZQQI5k/b8d7d3i9AZmA/t+Q4tk3hOC0tMOMSq2GlMYOfxbesxG4mJSeDp0EHs30N9bsfwUvs3zF4v/RzOeTQ==
+
+"@rollup/rollup-win32-arm64-msvc@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.40.2.tgz#6397e1e012db64dfecfed0774cb9fcf89503d716"
+  integrity sha512-Bjv/HG8RRWLNkXwQQemdsWw4Mg+IJ29LK+bJPW2SCzPKOUaMmPEppQlu/Fqk1d7+DX3V7JbFdbkh/NMmurT6Pg==
 
 "@rollup/rollup-win32-ia32-msvc@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-win32-ia32-msvc/-/rollup-win32-ia32-msvc-4.40.0.tgz#846e02c17044bd922f6f483a3b4d36aac6e2b921"
   integrity sha512-+m03kvI2f5syIqHXCZLPVYplP8pQch9JHyXKZ3AGMKlg8dCyr2PKHjwRLiW53LTrN/Nc3EqHOKxUxzoSPdKddA==
 
+"@rollup/rollup-win32-ia32-msvc@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-win32-ia32-msvc/-/rollup-win32-ia32-msvc-4.40.2.tgz#df0991464a52a35506103fe18d29913bf8798a0c"
+  integrity sha512-dt1llVSGEsGKvzeIO76HToiYPNPYPkmjhMHhP00T9S4rDern8P2ZWvWAQUEJ+R1UdMWJ/42i/QqJ2WV765GZcA==
+
 "@rollup/rollup-win32-x64-msvc@4.40.0":
   version "4.40.0"
   resolved "https://registry.npmmirror.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.40.0.tgz#fd92d31a2931483c25677b9c6698106490cbbc76"
   integrity sha512-lpPE1cLfP5oPzVjKMx10pgBmKELQnFJXHgvtHCtuJWOv8MxqdEIMNtgHgBFf7Ea2/7EuVwa9fodWUfXAlXZLZQ==
+
+"@rollup/rollup-win32-x64-msvc@4.40.2":
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.40.2.tgz#8dae04d01a2cbd84d6297d99356674c6b993f0fc"
+  integrity sha512-bwspbWB04XJpeElvsp+DCylKfF4trJDa2Y9Go8O6A7YLX2LIKGcNK/CYImJN6ZP4DcuOHB4Utl3iCbnR62DudA==
 
 "@sec-ant/readable-stream@^0.4.1":
   version "0.4.1"
@@ -1503,6 +1603,16 @@
     "@types/hast" "^3.0.4"
     hast-util-to-html "^9.0.5"
 
+"@shikijs/core@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.npmmirror.com/@shikijs/core/-/core-3.4.0.tgz#e64058b4707b842933a36b2d53bf7f52ee00ce68"
+  integrity sha512-0YOzTSRDn/IAfQWtK791gs1u8v87HNGToU6IwcA3K7nPoVOrS2Dh6X6A6YfXgPTSkTwR5y6myk0MnI0htjnwrA==
+  dependencies:
+    "@shikijs/types" "3.4.0"
+    "@shikijs/vscode-textmate" "^10.0.2"
+    "@types/hast" "^3.0.4"
+    hast-util-to-html "^9.0.5"
+
 "@shikijs/engine-javascript@3.2.2":
   version "3.2.2"
   resolved "https://registry.npmmirror.com/@shikijs/engine-javascript/-/engine-javascript-3.2.2.tgz#d9a02f07ef6f173d929520ee36442560cf229f86"
@@ -1512,12 +1622,29 @@
     "@shikijs/vscode-textmate" "^10.0.2"
     oniguruma-to-es "^4.1.0"
 
+"@shikijs/engine-javascript@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.npmmirror.com/@shikijs/engine-javascript/-/engine-javascript-3.4.0.tgz#bdf99adaaef6fbf421af30690e841f84f4f7d8b5"
+  integrity sha512-1ywDoe+z/TPQKj9Jw0eU61B003J9DqUFRfH+DVSzdwPUFhR7yOmfyLzUrFz0yw8JxFg/NgzXoQyyykXgO21n5Q==
+  dependencies:
+    "@shikijs/types" "3.4.0"
+    "@shikijs/vscode-textmate" "^10.0.2"
+    oniguruma-to-es "^4.3.3"
+
 "@shikijs/engine-oniguruma@3.2.2":
   version "3.2.2"
   resolved "https://registry.npmmirror.com/@shikijs/engine-oniguruma/-/engine-oniguruma-3.2.2.tgz#2a68e7be01960161615bcd6866a74f63c25578bc"
   integrity sha512-vyXRnWVCSvokwbaUD/8uPn6Gqsf5Hv7XwcW4AgiU4Z2qwy19sdr6VGzMdheKKN58tJOOe5MIKiNb901bgcUXYQ==
   dependencies:
     "@shikijs/types" "3.2.2"
+    "@shikijs/vscode-textmate" "^10.0.2"
+
+"@shikijs/engine-oniguruma@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.npmmirror.com/@shikijs/engine-oniguruma/-/engine-oniguruma-3.4.0.tgz#86e9ff95ed16e69177f19b5f2e1cb8481b623a68"
+  integrity sha512-zwcWlZ4OQuJ/+1t32ClTtyTU1AiDkK1lhtviRWoq/hFqPjCNyLj22bIg9rB7BfoZKOEOfrsGz7No33BPCf+WlQ==
+  dependencies:
+    "@shikijs/types" "3.4.0"
     "@shikijs/vscode-textmate" "^10.0.2"
 
 "@shikijs/langs@3.2.2":
@@ -1527,12 +1654,26 @@
   dependencies:
     "@shikijs/types" "3.2.2"
 
+"@shikijs/langs@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.npmmirror.com/@shikijs/langs/-/langs-3.4.0.tgz#4a4b330cfd43af1a7c04cc668793e87ad40ad28f"
+  integrity sha512-bQkR+8LllaM2duU9BBRQU0GqFTx7TuF5kKlw/7uiGKoK140n1xlLAwCgXwSxAjJ7Htk9tXTFwnnsJTCU5nDPXQ==
+  dependencies:
+    "@shikijs/types" "3.4.0"
+
 "@shikijs/themes@3.2.2":
   version "3.2.2"
   resolved "https://registry.npmmirror.com/@shikijs/themes/-/themes-3.2.2.tgz#56b9d6f6803296e9cb7233e25334897496d40d9d"
   integrity sha512-Zuq4lgAxVKkb0FFdhHSdDkALuRpsj1so1JdihjKNQfgM78EHxV2JhO10qPsMrm01FkE3mDRTdF68wfmsqjt6HA==
   dependencies:
     "@shikijs/types" "3.2.2"
+
+"@shikijs/themes@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.npmmirror.com/@shikijs/themes/-/themes-3.4.0.tgz#59582f19c04b79fa3fa7a9cc2630624c0368f115"
+  integrity sha512-YPP4PKNFcFGLxItpbU0ZW1Osyuk8AyZ24YEFaq04CFsuCbcqydMvMUTi40V2dkc0qs1U2uZFrnU6s5zI6IH+uA==
+  dependencies:
+    "@shikijs/types" "3.4.0"
 
 "@shikijs/transformers@^3.1.0":
   version "3.2.2"
@@ -1559,17 +1700,25 @@
     "@shikijs/vscode-textmate" "^10.0.2"
     "@types/hast" "^3.0.4"
 
-"@shikijs/vitepress-twoslash@^3.2.2":
-  version "3.2.2"
-  resolved "https://registry.npmmirror.com/@shikijs/vitepress-twoslash/-/vitepress-twoslash-3.2.2.tgz#87bb6e7920ae83adcf45e9424bf31148d78b404c"
-  integrity sha512-90nEoOBWgAjsvIBzJKRih89VTYCExWgF72BeesWJsxDpZasYyEZ/MpNaaDTSRHnEHXwfsmezZheiHOUmBi5G5g==
+"@shikijs/types@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.npmmirror.com/@shikijs/types/-/types-3.4.0.tgz#f7b5cdde2db5dd5c79b8dc785b11322e5dd5fe59"
+  integrity sha512-EUT/0lGiE//7j5N/yTMNMT3eCWNcHJLrRKxT0NDXWIfdfSmFJKfPX7nMmRBrQnWboAzIsUziCThrYMMhjbMS1A==
+  dependencies:
+    "@shikijs/vscode-textmate" "^10.0.2"
+    "@types/hast" "^3.0.4"
+
+"@shikijs/vitepress-twoslash@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.npmmirror.com/@shikijs/vitepress-twoslash/-/vitepress-twoslash-3.4.0.tgz#6c6974ecf5c1a146ddbe9ddee203ff1844434f27"
+  integrity sha512-3WPgEArF9sZamrB9WW6NGDj3r4+pvbWEvTjc+7jHkfoZRWJpIlyL6jqZ6MGScRHssgIq5ATG5WklflJs/nYoMw==
   dependencies:
     "@shikijs/twoslash" ""
     floating-vue "^5.2.2"
     mdast-util-from-markdown "^2.0.2"
     mdast-util-gfm "^3.1.0"
     mdast-util-to-hast "^13.2.0"
-    shiki "3.2.2"
+    shiki "3.4.0"
     twoslash "^0.3.1"
     twoslash-vue "^0.3.1"
     vue "^3.5.13"
@@ -2003,10 +2152,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-axios@^1.8.4:
-  version "1.8.4"
-  resolved "https://registry.npmmirror.com/axios/-/axios-1.8.4.tgz#78990bb4bc63d2cae072952d374835950a82f447"
-  integrity sha512-eBSYY4Y68NNlHbHBMdeDmKNtDgXWhQsJcGqzO3iLUM0GraQFSS9cVgPX5I9b3lbdFKyYoAEGAZF1DwhTaljNAw==
+axios@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.npmmirror.com/axios/-/axios-1.9.0.tgz#25534e3b72b54540077d33046f77e3b8d7081901"
+  integrity sha512-re4CqKTJaURpzbLHtIi6XpDv20/CnpXOtjRY5/CU32L8gU8ek9UIivcfvSWvmKEngmVbrUtPpdDwWDWL7DNHvg==
   dependencies:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
@@ -2235,6 +2384,11 @@ cross-spawn@^7.0.3, cross-spawn@^7.0.6:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+crypto-js@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.npmmirror.com/crypto-js/-/crypto-js-4.2.0.tgz#4d931639ecdfd12ff80e8186dba6af2c2e856631"
+  integrity sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==
 
 crypto-random-string@^2.0.0:
   version "2.0.0"
@@ -2493,10 +2647,10 @@ es-to-primitive@^1.3.0:
     is-date-object "^1.0.5"
     is-symbol "^1.0.4"
 
-es-toolkit@^1.34.1:
-  version "1.34.1"
-  resolved "https://registry.npmmirror.com/es-toolkit/-/es-toolkit-1.34.1.tgz#5e0d47494f8606f763b6ad1519cb8bb7b83619e6"
-  integrity sha512-OA6cd94fJV9bm8dWhIySkWq4xV+rAQnBZUr2dnpXam0QJ8c+hurLbKA8/QooL9Mx4WCAxvIDsiEkid5KPQ5xgQ==
+es-toolkit@^1.36.0:
+  version "1.37.2"
+  resolved "https://registry.npmmirror.com/es-toolkit/-/es-toolkit-1.37.2.tgz#f23a509a71885f13c6ebdd5d3797d7fe518ee977"
+  integrity sha512-ADDfk+pPFF0ofMpRAIc6on01p8heiuwuuJsYLzTP4UOjxVK9QsE2+0D1Q4J/zX2XBo6ac+27H5++YBIwmGAX/g==
 
 esbuild@^0.25.0:
   version "0.25.2"
@@ -2631,6 +2785,11 @@ fdir@^6.4.3:
   version "6.4.3"
   resolved "https://registry.npmmirror.com/fdir/-/fdir-6.4.3.tgz#011cdacf837eca9b811c89dbb902df714273db72"
   integrity sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==
+
+fdir@^6.4.4:
+  version "6.4.4"
+  resolved "https://registry.npmmirror.com/fdir/-/fdir-6.4.4.tgz#1cfcf86f875a883e19a8fab53622cfe992e8d2f9"
+  integrity sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==
 
 figures@^6.1.0:
   version "6.1.0"
@@ -3984,11 +4143,6 @@ node-releases@^2.0.19:
   resolved "https://registry.npmmirror.com/node-releases/-/node-releases-2.0.19.tgz#9e445a52950951ec4d177d843af370b411caf314"
   integrity sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==
 
-npm-check-updates@^17.1.18:
-  version "17.1.18"
-  resolved "https://registry.npmmirror.com/npm-check-updates/-/npm-check-updates-17.1.18.tgz#b26e5a6bb5f2b32af5950cda7ea40aafaf92e2cc"
-  integrity sha512-bkUy2g4v1i+3FeUf5fXMLbxmV95eG4/sS7lYE32GrUeVgQRfQEk39gpskksFunyaxQgTIdrvYbnuNbO/pSUSqw==
-
 npm-run-path@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmmirror.com/npm-run-path/-/npm-run-path-6.0.0.tgz#25cfdc4eae04976f3349c0b1afc089052c362537"
@@ -4036,6 +4190,11 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
+oniguruma-parser@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.npmmirror.com/oniguruma-parser/-/oniguruma-parser-0.12.1.tgz#82ba2208d7a2b69ee344b7efe0ae930c627dcc4a"
+  integrity sha512-8Unqkvk1RYc6yq2WBYRj4hdnsAxVze8i7iPfQr8e4uSP3tRv0rpZcbGUDvxfQQcdwHt/e9PrMvGCsa8OqG9X3w==
+
 oniguruma-parser@^0.5.4:
   version "0.5.4"
   resolved "https://registry.npmmirror.com/oniguruma-parser/-/oniguruma-parser-0.5.4.tgz#c87fd162441db32405c4706b8ff72764a6617448"
@@ -4048,6 +4207,15 @@ oniguruma-to-es@^4.1.0:
   dependencies:
     emoji-regex-xs "^1.0.0"
     oniguruma-parser "^0.5.4"
+    regex "^6.0.1"
+    regex-recursion "^6.0.2"
+
+oniguruma-to-es@^4.3.3:
+  version "4.3.3"
+  resolved "https://registry.npmmirror.com/oniguruma-to-es/-/oniguruma-to-es-4.3.3.tgz#50db2c1e28ec365e102c1863dfd3d1d1ad18613e"
+  integrity sha512-rPiZhzC3wXwE59YQMRDodUwwT9FZ9nNBwQQfsd1wfdtlKEyCdRV0avrTcSZ5xlIvGRVPd/cx6ZN45ECmS39xvg==
+  dependencies:
+    oniguruma-parser "^0.12.1"
     regex "^6.0.1"
     regex-recursion "^6.0.2"
 
@@ -4454,6 +4622,35 @@ rollup@^4.30.1:
     "@rollup/rollup-win32-x64-msvc" "4.40.0"
     fsevents "~2.3.2"
 
+rollup@^4.34.9:
+  version "4.40.2"
+  resolved "https://registry.npmmirror.com/rollup/-/rollup-4.40.2.tgz#778e88b7a197542682b3e318581f7697f55f0619"
+  integrity sha512-tfUOg6DTP4rhQ3VjOO6B4wyrJnGOX85requAXvqYTHsOgb2TFJdZ3aWpT8W2kPoypSGP7dZUyzxJ9ee4buM5Fg==
+  dependencies:
+    "@types/estree" "1.0.7"
+  optionalDependencies:
+    "@rollup/rollup-android-arm-eabi" "4.40.2"
+    "@rollup/rollup-android-arm64" "4.40.2"
+    "@rollup/rollup-darwin-arm64" "4.40.2"
+    "@rollup/rollup-darwin-x64" "4.40.2"
+    "@rollup/rollup-freebsd-arm64" "4.40.2"
+    "@rollup/rollup-freebsd-x64" "4.40.2"
+    "@rollup/rollup-linux-arm-gnueabihf" "4.40.2"
+    "@rollup/rollup-linux-arm-musleabihf" "4.40.2"
+    "@rollup/rollup-linux-arm64-gnu" "4.40.2"
+    "@rollup/rollup-linux-arm64-musl" "4.40.2"
+    "@rollup/rollup-linux-loongarch64-gnu" "4.40.2"
+    "@rollup/rollup-linux-powerpc64le-gnu" "4.40.2"
+    "@rollup/rollup-linux-riscv64-gnu" "4.40.2"
+    "@rollup/rollup-linux-riscv64-musl" "4.40.2"
+    "@rollup/rollup-linux-s390x-gnu" "4.40.2"
+    "@rollup/rollup-linux-x64-gnu" "4.40.2"
+    "@rollup/rollup-linux-x64-musl" "4.40.2"
+    "@rollup/rollup-win32-arm64-msvc" "4.40.2"
+    "@rollup/rollup-win32-ia32-msvc" "4.40.2"
+    "@rollup/rollup-win32-x64-msvc" "4.40.2"
+    fsevents "~2.3.2"
+
 run-parallel@^1.1.9:
   version "1.2.0"
   resolved "https://registry.npmmirror.com/run-parallel/-/run-parallel-1.2.0.tgz#66d1368da7bdf921eb9d95bd1a9229e7f21a43ee"
@@ -4572,7 +4769,21 @@ shebang-regex@^3.0.0:
   resolved "https://registry.npmmirror.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-shiki@3.2.2, shiki@^3.1.0:
+shiki@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.npmmirror.com/shiki/-/shiki-3.4.0.tgz#0c21ed2607af6028eb1f90cc71b2c597e7930630"
+  integrity sha512-Ni80XHcqhOEXv5mmDAvf5p6PAJqbUc/RzFeaOqk+zP5DLvTPS3j0ckvA+MI87qoxTQ5RGJDVTbdl/ENLSyyAnQ==
+  dependencies:
+    "@shikijs/core" "3.4.0"
+    "@shikijs/engine-javascript" "3.4.0"
+    "@shikijs/engine-oniguruma" "3.4.0"
+    "@shikijs/langs" "3.4.0"
+    "@shikijs/themes" "3.4.0"
+    "@shikijs/types" "3.4.0"
+    "@shikijs/vscode-textmate" "^10.0.2"
+    "@types/hast" "^3.0.4"
+
+shiki@^3.1.0:
   version "3.2.2"
   resolved "https://registry.npmmirror.com/shiki/-/shiki-3.2.2.tgz#aa231cc84efcf4f2a875de604aa7a45efe446fd2"
   integrity sha512-0qWBkM2t/0NXPRcVgtLhtHv6Ak3Q5yI4K/ggMqcgLRKm4+pCs3namgZlhlat/7u2CuqNtlShNs9lENOG6n7UaQ==
@@ -4675,6 +4886,11 @@ space-separated-tokens@^2.0.0:
   version "2.0.2"
   resolved "https://registry.npmmirror.com/space-separated-tokens/-/space-separated-tokens-2.0.2.tgz#1ecd9d2350a3844572c3f4a312bceb018348859f"
   integrity sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==
+
+spark-md5@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmmirror.com/spark-md5/-/spark-md5-3.0.2.tgz#7952c4a30784347abcee73268e473b9c0167e3fc"
+  integrity sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==
 
 speakingurl@^14.0.1:
   version "14.0.1"
@@ -4884,6 +5100,14 @@ tinyglobby@^0.2.10:
   integrity sha512-qkf4trmKSIiMTs/E63cxH+ojC2unam7rJ0WrauAzpT3ECNTxGRMlaXxVbfxMUC/w0LaYk6jQ4y/nGR9uBO3tww==
   dependencies:
     fdir "^6.4.3"
+    picomatch "^4.0.2"
+
+tinyglobby@^0.2.13:
+  version "0.2.13"
+  resolved "https://registry.npmmirror.com/tinyglobby/-/tinyglobby-0.2.13.tgz#a0e46515ce6cbcd65331537e57484af5a7b2ff7e"
+  integrity sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==
+  dependencies:
+    fdir "^6.4.4"
     picomatch "^4.0.2"
 
 to-regex-range@^5.0.1:
@@ -5142,7 +5366,7 @@ vite-plugin-pwa@^1.0.0:
     workbox-build "^7.3.0"
     workbox-window "^7.3.0"
 
-vite@^6.2.1, vite@^6.2.6:
+vite@^6.2.1:
   version "6.2.6"
   resolved "https://registry.npmmirror.com/vite/-/vite-6.2.6.tgz#7f0ccf2fdc0c1eda079ce258508728e2473d3f61"
   integrity sha512-9xpjNl3kR4rVDZgPNdTL0/c6ao4km69a/2ihNQbcANz8RuCOK3hQBmLSJf3bRKVQjVMda+YvizNE8AwvogcPbw==
@@ -5153,10 +5377,24 @@ vite@^6.2.1, vite@^6.2.6:
   optionalDependencies:
     fsevents "~2.3.3"
 
-vitepress-i18n@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.npmmirror.com/vitepress-i18n/-/vitepress-i18n-1.3.3.tgz#831702d9f11223cc82fb070b2db72101a732c411"
-  integrity sha512-iUbfj61QPYyi99zl9Vh50uy3HM6EesbbEWyeSCBOoV1aDeVWOY/3vusL/XU1/0zTDIfLbv/lLvoOhOM+2rLQcw==
+vite@^6.3.5:
+  version "6.3.5"
+  resolved "https://registry.npmmirror.com/vite/-/vite-6.3.5.tgz#fec73879013c9c0128c8d284504c6d19410d12a3"
+  integrity sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==
+  dependencies:
+    esbuild "^0.25.0"
+    fdir "^6.4.4"
+    picomatch "^4.0.2"
+    postcss "^8.5.3"
+    rollup "^4.34.9"
+    tinyglobby "^0.2.13"
+  optionalDependencies:
+    fsevents "~2.3.3"
+
+vitepress-i18n@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.npmmirror.com/vitepress-i18n/-/vitepress-i18n-1.3.4.tgz#afb61e7eb42f35fa7967e8226ed8375080778490"
+  integrity sha512-PlYtzuoicWkKfIKutfG8a5+2KG0eaLPZ4DuXUVGpeZHE3L92Tekr54OyCqVEPIwhNf3wZdanZwqkToHot1D0tw==
 
 vitepress-plugin-comment-with-giscus@^1.1.15:
   version "1.1.15"
@@ -5165,10 +5403,10 @@ vitepress-plugin-comment-with-giscus@^1.1.15:
   dependencies:
     "@giscus/vue" "^2.2.8"
 
-vitepress-plugin-group-icons@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.npmmirror.com/vitepress-plugin-group-icons/-/vitepress-plugin-group-icons-1.5.1.tgz#e52c447ae1114bdb8fecdc572351beaa03903150"
-  integrity sha512-IF4xZ5C/BNbod7QFJk3z3XnxckJPw1Dc1pHUQp7FaJxPRt0Y7j11fM1krSR1S8D5FBEpbYp7KJI9XVmrpFOU5w==
+vitepress-plugin-group-icons@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.npmmirror.com/vitepress-plugin-group-icons/-/vitepress-plugin-group-icons-1.5.2.tgz#99a5b399bf7d3d262c8f808725932795b3f31f9c"
+  integrity sha512-zen07KxZ83y3eecou4EraaEgwIriwHaB5Q0cHAmS4yO1UZEQvbljTylHPqiJ7LNkV39U8VehfcyquAJXg/26LA==
   dependencies:
     "@iconify-json/logos" "^1.2.4"
     "@iconify-json/vscode-icons" "^1.2.18"
