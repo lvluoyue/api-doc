@@ -1,21 +1,27 @@
-# 二维码登录API <Badge type="tip" text="V3" /> <Badge type="danger" text="开发中" />
+# 二维码登录API <Badge type="tip" text="V3" />
+
 ::: danger
 此接口仍在开发中，在此期间接口可能会经常变更，不建议使用。
 :::
 
 ## 接口描述
+
 - 使用二维码登录，并获取qq音乐的token。接口使用sse返回，需要前端使用`EventSource`监听sse事件。
 
 ## 接口地址
--  `GET` `/music/tencent/cookie/fastlogin`
+
+- `GET` `/music/tencent/cookie/fastlogin`
 
 ## 请求数据类型
+
 - `application/x-www-form-urlencoded`
 
 ## 返回数据类型
+
 - `text/event-stream`
 
 ## 请求示例
+
 - https://api.vkeys.cn/music/tencent/cookie/qrcode
 
 ## 请求参数
@@ -28,16 +34,96 @@
 
 </div>
 
-## key获取脚本
-::: info
-GitHub链接：https://github.com/lvluoyue/api-doc/blob/main/scripts/qqkey.ps1
-:::
-使用方法：在windows中登录QQ，然后打开cmd命令行，输入以下命令
-```shell
-powershell "irm https://gh-proxy.com/raw.githubusercontent.com/lvluoyue/api-doc/refs/heads/main/scripts/qqkey.ps1 | iex"
-```
+## 在线获取
+
+<div class="qrcode-button-box">
+    <VPButton text="点击获取二维码" @click="showQRCodeModal = true;save = false"></VPButton>
+    <VPButton text="点击获取二维码（结果保存到服务器）" @click="showQRCodeModal = true;save = true"></VPButton>
+</div>
+
+<div v-if="showQRCodeModal" class="qr-code-modal">
+  <div class="qr-code-modal-content">
+    <span class="qr-code-close" @click="showQRCodeModal = false">&times;</span>
+      <VPImage v-if="showQRCodeModal" :image="qrcode" alt="QR Code"></VPImage>
+  </div>
+</div>
+
+<script setup>
+import {ref, watch} from 'vue';
+import {VPButton,VPImage} from "vitepress/theme"; 
+const showQRCodeModal = ref(false);
+const save = ref(false);
+const qrcode = ref('');
+const cookie = ref({
+  cookie: null,
+  info: null,
+});
+
+watch(showQRCodeModal, (newValue) => {
+    if(newValue) {
+        const source = new EventSource('https://api.vkeys.cn/music/tencent/cookie/qrcode?save=' + save.value);
+        source.addEventListener('message', function ({lastEventId, data}) {
+          console.log(lastEventId);
+          if(lastEventId === '1') {
+            qrcode.value = data;
+          } else if(data === '二维码已失效') {
+            source.close();
+          }
+          const json = JSON.parse(data);
+            if(json.cookie) {
+              cookie.value = json.cookie;
+              source.close();
+            }
+        }, false);
+    } else {
+        qrcode.value = '';
+        cookie.value = {cookie: null, info: null};
+    }
+})
+
+</script>
+<style>
+.qrcode-button-box {
+    display: flex;
+    gap: 10px;
+}
+.qr-code-modal {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.qr-code-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+
+.qr-code-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.qr-code-close:hover,
+.qr-code-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 
 ## 返回示例
+
 ``` json
 {
     "code": 200,
