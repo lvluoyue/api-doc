@@ -86,6 +86,8 @@ watch(showQRCodeModal, (newValue) => {
 .qrcode-button-box {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .qr-code-modal {
   display: block;
