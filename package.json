@@ -21,6 +21,7 @@
     "@vite-pwa/vitepress": "^1.0.0",
     "markdown-it-task-checkbox": "^1.0.6",
     "pixi-live2d-display": "^0.4.0",
+    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-pwa": "^1.0.3",
     "vite-plugin-vue-devtools": "^8.0.1",
     "vitepress": "^2.0.0-alpha.12",

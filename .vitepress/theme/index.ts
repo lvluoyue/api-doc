@@ -79,7 +79,7 @@ export default {
           {
             key: 'progress',
             type: 'progress',
-            title: '进度',
+            title: '开发进度',
           },
           {
             key: 'wordCount',

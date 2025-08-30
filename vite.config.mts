@@ -10,6 +10,7 @@ import {
 } from '@nolebase/vitepress-plugin-page-properties/vite';
 import {ConfigEnv, loadEnv} from "vitepress";
 import VueDevTools from 'vite-plugin-vue-devtools'
+import viteCompression from 'vite-plugin-compression';
 
 console.log('process.env', import.meta.env)
 export default defineConfig(({mode}: ConfigEnv) => {
@@ -33,6 +34,11 @@ export default defineConfig(({mode}: ConfigEnv) => {
     plugins: [
       VueDevTools({
         launchEditor: 'webstorm'
+      }),
+      viteCompression({
+        algorithm: 'gzip', // 使用 gzip 压缩
+        ext: '.gz', // 压缩文件扩展名
+        deleteOriginFile: false, // 是否删除原始文件
       }),
       groupIconVitePlugin({
         customIcon: {

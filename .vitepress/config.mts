@@ -21,8 +21,9 @@ const vitePressConfig = (env): UserConfig => {
       ...env
     },
     sitemap: {
-      hostname: 'https://doc.vkeys.cn'
+      hostname: 'https://doc.vkeys.cn/api-doc/'
     },
+    metaChunk: true,
     // mpa: true,
     head: [
       ['script', {
@@ -201,6 +202,7 @@ const vitePressConfig = (env): UserConfig => {
       },
       workbox: {
         globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2,moc,json}"], // 匹配需要缓存的文件类型
+        globIgnores: ["sw.js"],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/model\.hacxy\.cn\/.*/i, // 匹配需要缓存的 Google 字体
@@ -232,12 +234,12 @@ const vitePressConfig = (env): UserConfig => {
           },
           {
             urlPattern: /^https:\/\/gh-proxy\.com\/.*/i, // 匹配需要缓存的 gh-proxy 图片
-            handler: "NetworkFirst", // 网络优先策略
+            handler: "CacheFirst", // 网络优先策略
             options: {
               cacheName: "gh-proxy", // 缓存名称
               expiration: {
-                maxEntries: 30, // 最大缓存条目数
-                maxAgeSeconds: 60 * 60 * 24 * 365, // 缓存有效期，365天
+                maxEntries: 50, // 最大缓存条目数
+                maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存有效期，365天
               },
               cacheableResponse: {
                 statuses: [0, 200], // 缓存的响应状态码
