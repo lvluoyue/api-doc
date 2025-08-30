@@ -21,7 +21,6 @@ import {
   type Options
   // @ts-ignore
 } from '@nolebase/vitepress-plugin-page-properties/client'
-
 import 'virtual:group-icons.css'
 import '@shikijs/vitepress-twoslash/style.css'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
@@ -73,6 +72,16 @@ export default {
       properties: {
         'zh-CN': [
           {
+            key: 'tags',
+            type: 'tags',
+            title: '标签',
+          },
+          {
+            key: 'progress',
+            type: 'progress',
+            title: '进度',
+          },
+          {
             key: 'wordCount',
             type: 'dynamic',
             title: '字数',
@@ -88,7 +97,7 @@ export default {
               type: 'readingTime',
               dateFnsLocaleName: 'zhCN',
             },
-          }
+          },
         ],
       },
     } as Options<DynamicProperty>)

@@ -592,3 +592,12 @@
   overflow-x:auto;
   white-space: nowrap;
 }
+
+.vp-nolebase-page-properties-grid {
+  grid-template-columns: 180px auto 180px auto !important;
+}
+@media (max-width: 639.9px) {
+  .vp-nolebase-page-properties-grid {
+    grid-template-columns: 80px auto 80px auto !important;
+  }
+}

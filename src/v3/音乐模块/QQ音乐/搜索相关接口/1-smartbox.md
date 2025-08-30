@@ -1,3 +1,9 @@
+---
+tags:
+  - QQ音乐
+progress: 85
+---
+
 # 快捷搜索API <Badge type="tip" text="V3" />
 ::: danger
 此接口仍在开发中，在此期间接口可能会经常变更，不建议使用。

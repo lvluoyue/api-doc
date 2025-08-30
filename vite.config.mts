@@ -9,6 +9,7 @@ import {
   PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite';
 import {ConfigEnv, loadEnv} from "vitepress";
+import VueDevTools from 'vite-plugin-vue-devtools'
 
 console.log('process.env', import.meta.env)
 export default defineConfig(({mode}: ConfigEnv) => {
@@ -30,6 +31,9 @@ export default defineConfig(({mode}: ConfigEnv) => {
       ],
     },
     plugins: [
+      VueDevTools({
+        launchEditor: 'webstorm'
+      }),
       groupIconVitePlugin({
         customIcon: {
           json: localIconLoader(import.meta.url, './public/svg/json.svg')
