@@ -30,8 +30,14 @@ const vitePressConfig = (env): UserConfig => {
         src: 'https://at.alicdn.com/t/c/font_4891400_cfrebzhw43.js',
       }],
       ['script', {
-        src: 'https://testingcf.jsdelivr.net/npm/oh-my-live2d@0.19.3/dist/index.min.js',
+        src: 'https://gcore.jsdelivr.net/npm/oh-my-live2d@0.19.3/dist/index.min.js',//testingcf.jsdelivr.net
         'data-global': 'OML2D'
+      }],
+      ['script', {
+        async: 'async',
+        // 记得替换成你的真正的 src
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772090059199613',
+        crossorigin: 'anonymous',
       }],
       [
         "link",
@@ -237,6 +243,20 @@ const vitePressConfig = (env): UserConfig => {
             handler: "CacheFirst", // 网络优先策略
             options: {
               cacheName: "gh-proxy", // 缓存名称
+              expiration: {
+                maxEntries: 50, // 最大缓存条目数
+                maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存有效期，365天
+              },
+              cacheableResponse: {
+                statuses: [0, 200], // 缓存的响应状态码
+              },
+            },
+          },
+          {
+            urlPattern: /^https:\/\/proxy\.pipers\.cn\/.*/i, // 匹配需要缓存的 gh-proxy 图片
+            handler: "CacheFirst", // 网络优先策略
+            options: {
+              cacheName: "proxy-pipers", // 缓存名称
               expiration: {
                 maxEntries: 50, // 最大缓存条目数
                 maxAgeSeconds: 60 * 60 * 24 * 7, // 缓存有效期，365天
