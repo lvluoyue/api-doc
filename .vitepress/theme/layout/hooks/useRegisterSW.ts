@@ -23,6 +23,7 @@ export default () => {
       icon: './images/pwa-512x512.png',
       dir: 'auto',
       renotify: true,
+      tag: 'offline-ready'
     })
   }
 
@@ -32,6 +33,7 @@ export default () => {
       icon: './images/pwa-512x512.png',
       dir: 'auto',
       renotify: true,
+      tag: 'offline-ready'
     })
   }
 
