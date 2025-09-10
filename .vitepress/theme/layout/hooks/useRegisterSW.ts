@@ -1,21 +1,21 @@
-import { onBeforeMount } from 'vue'
-import { useWebNotification } from '@vueuse/core'
-import { registerSW } from 'virtual:pwa-register'
+import {onBeforeMount} from 'vue'
+import {useWebNotification} from '@vueuse/core'
+import {registerSW} from 'virtual:pwa-register'
 
 const intervalMS = 60 * 1000;
 
-const {isSupported,show} = useWebNotification({
+const {isSupported, show} = useWebNotification({
   requestPermissions: true
 })
 
 const showNotification = (title: string) => {
   if (isSupported) {
-    return  show({
+    return show({
       title,
       icon: './images/pwa-512x512.png',
       dir: 'auto',
       renotify: true,
-      tag: 'offline-ready'
+      tag: 'pwa-update'
     })
   }
 }
@@ -25,12 +25,15 @@ export default () => {
     console.error('Service Worker is not supported in this browser.')
   }
 
-  onBeforeMount(async () => {
+  onBeforeMount(() => {
     registerSW({
       immediate: true,
       onOfflineReady: () => showNotification('网页已完成更新，您可以在断网后依然可以访问页面！'),
       onNeedRefresh: () => showNotification('检测到页面有更新，正在为您自动更新！'),
-      onRegisteredSW(swUrl, r) {
+      onRegisteredSW(swUrl: string, r) {
+        r.addEventListener('updatefound', () => {
+          showNotification('检测到页面有更新，正在为您自动更新！')
+        })
         r &&
         setInterval(async () => {
           if (r.installing || !navigator) return;
@@ -44,13 +47,7 @@ export default () => {
               'cache-control': 'no-cache',
             },
           });
-
-          if (status === 200) {
-            await Promise.all([
-              showNotification('检测到页面有更新，正在为您自动更新！'),
-              await r.update(),
-            ]);
-          }
+          if (status === 200) await r.update()
         }, intervalMS);
       },
       onRegisterError(e) {
