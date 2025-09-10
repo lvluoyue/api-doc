@@ -10,15 +10,10 @@ import {
 } from '@nolebase/vitepress-plugin-page-properties/vite';
 import {ConfigEnv, loadEnv} from "vitepress";
 import VueDevTools from 'vite-plugin-vue-devtools'
-import viteCompression from 'vite-plugin-compression';
 
-console.log('process.env', import.meta.env)
 export default defineConfig(({mode}: ConfigEnv) => {
   const env = loadEnv(mode, process.cwd());
   return {
-    define: {
-      'import.meta.env': env, // 确保所有环境变量传递
-    },
     optimizeDeps: {
       exclude: [
         '@nolebase/*',
@@ -34,13 +29,6 @@ export default defineConfig(({mode}: ConfigEnv) => {
     plugins: [
       VueDevTools({
         launchEditor: 'webstorm'
-      }),
-      viteCompression({
-        verbose: true, // 是否在控制台输出压缩结果
-        threshold: 10240, // 只处理大于此大小的资源（单位：字节）。默认值为 0。
-        algorithm: 'gzip', // 使用 gzip 压缩
-        ext: '.gz', // 压缩文件扩展名
-        deleteOriginFile: false, // 是否删除原始文件
       }),
       groupIconVitePlugin({
         customIcon: {

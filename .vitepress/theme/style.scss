@@ -334,14 +334,8 @@
 /* .vitepress\theme\style\blur.css */
 :root {
 
-  /* 首页下滑后导航透明 */
-  .VPNavBar:not(.has-sidebar):not(.home.top) {
-    background-color: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(10px);
-  }
-
-  /* 搜索框透明 */
-  .DocSearch-Button {
+  /* 首页下滑后导航透明 ,搜索框透明, 文档页侧边栏顶部透明*/
+  .VPNavBar:not(.has-sidebar):not(.home.top), .DocSearch-Button, .curtain {
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(10px);
   }
@@ -353,25 +347,13 @@
     background-color: transparent;
   }
 
-  /* 文档页侧边栏顶部透明 */
-  .curtain {
-    background-color: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(10px);
-  }
-
   @media (min-width: 960px) {
 
-    /* 文档页导航中间透明 */
-    .VPNavBar:not(.home.top) .content-body {
+    /* 文档页导航中间透明, 移动端大纲栏透明 */
+    .VPNavBar:not(.home.top) .content-body, .VPLocalNav {
       background-color: rgba(255, 255, 255, 0);
       backdrop-filter: blur(10px);
     }
-  }
-
-  /* 移动端大纲栏透明 */
-  .VPLocalNav {
-    background-color: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(10px);
   }
 
 }
@@ -391,28 +373,12 @@
     border-top: none;
   }
 
-  /* 手机端菜单栏顶部横条隐藏 */
-  .VPNavBar.screen-open {
-    border-bottom: none;
-  }
-
-  /* 手机端菜单栏菜单分割线隐藏 */
-  .VPNavScreenMenuLink {
-    border-bottom: none;
-  }
-
-  /* 手机端菜单组隐藏 */
-  .VPNavScreenMenuGroup {
-    border-bottom: none;
-  }
-
-  /* 手机端大纲栏横条隐藏 */
-  .VPLocalNav {
+  /* 手机端菜单栏顶部横条隐藏, 手机端菜单栏菜单分割线隐藏,手机端菜单组隐藏 手机端大纲栏横条隐藏 */
+  .VPNavBar.screen-open, .VPNavScreenMenuLink, .VPNavScreenMenuGroup, .VPLocalNav {
     border-bottom: none;
   }
 
 }
-
 
 /* 导航栏下划线隐藏 */
 .divider {
@@ -451,10 +417,9 @@
 
 .vp-doc .vp-code-block-title {
   box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
-}
-
-.vp-doc .vp-code-block-title div[class*=language-] {
-  box-shadow: none;
+  & div[class*=language-] {
+    box-shadow: none;
+  }
 }
 
 .vp-doc div[class*='language-'], .vp-block {

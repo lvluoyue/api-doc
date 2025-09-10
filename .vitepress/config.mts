@@ -1,6 +1,7 @@
 import {loadEnv, type ConfigEnv, defineConfig, type UserConfig} from 'vitepress'
 import {withSidebar, VitePressSidebarOptions} from 'vitepress-sidebar';
 import {transformerTwoslash} from '@shikijs/vitepress-twoslash'
+import { createFileSystemTypesCache } from '@shikijs/vitepress-twoslash/cache-fs'
 import {groupIconMdPlugin} from 'vitepress-plugin-group-icons'
 import {withI18n} from 'vitepress-i18n';
 import {withPwa} from "@vite-pwa/vitepress";
@@ -74,7 +75,9 @@ const vitePressConfig = (env): UserConfig => {
           .use(markdownItTaskCheckbox)
       },
       codeTransformers: [
-        transformerTwoslash()
+        transformerTwoslash({
+          typesCache: createFileSystemTypesCache(),
+        })
       ],
       languages: ['js', 'jsx', 'ts', 'tsx']
     },

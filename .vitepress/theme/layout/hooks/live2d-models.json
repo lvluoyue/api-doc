@@ -1,0 +1,53 @@
+[
+  {
+    "name": "雷姆",
+    "path": "https://proxy.pipers.cn/https://raw.githubusercontent.com/imuncle/live2d/refs/heads/master/model/rem/model.json",
+    "volume": 1,
+    "scale": 0.13,
+    "position": [-30, 80],
+    "stageStyle": {
+      "height": 440,
+      "width": 240
+    },
+    "mobileScale": 0.08,
+    "mobilePosition": [-15, 80],
+    "mobileStageStyle": {
+      "height": 300,
+      "width": 150
+    }
+  },
+  {
+    "name": "初音未来",
+    "path": "https://proxy.pipers.cn/https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/miku/miku.model.json",
+    "volume": 1,
+    "scale": 0.30,
+    "position": [0, 75],
+    "stageStyle": {
+      "height": 440,
+      "width": 220
+    },
+    "mobileScale": 0.2,
+    "mobilePosition": [0, 95],
+    "mobileStageStyle": {
+      "height": 315,
+      "width": 160
+    }
+  },
+  {
+    "name": "ATRI",
+    "path": "https://proxy.pipers.cn/https://raw.githubusercontent.com/lvluoyue/Live2D-ATRI/refs/heads/main/atri_8.model3.json",
+    "volume": 1,
+    "scale": 0.23,
+    "position": [-90, 100],
+    "stageStyle": {
+      "height": 570,
+      "width": 280
+    },
+    "mobileScale": 0.11,
+    "mobilePosition": [-20, 100],
+    "mobileStageStyle": {
+      "height": 330,
+      "width": 160
+    }
+  }
+]

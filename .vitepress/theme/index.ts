@@ -28,7 +28,8 @@ import '@nolebase/vitepress-plugin-page-properties/client/style.css'
 
 export default {
   extends: DefaultTheme,
-  Layout, setup() {
+  Layout,
+  setup() {
     // Get frontmatter and route
     const {frontmatter} = useData();
     const route = useRoute();
@@ -52,55 +53,54 @@ export default {
       true
     );
   },
-  enhanceApp({ app }) {
+  enhanceApp({app}) {
     app.use(TwoslashFloatingVue)
-    app.use(NolebaseGitChangelogPlugin)
-    app.provide(InjectionKey, {
-      layoutSwitch: {
-        disableHelp: true,
-        defaultMode: LayoutMode.Original,
-        contentLayoutMaxWidth: {
-          defaultMaxWidth: 100
+      .use(NolebaseGitChangelogPlugin)
+      .use(NolebasePagePropertiesPlugin(), {
+        properties: {
+          'zh-CN': [
+            {
+              key: 'tags',
+              type: 'tags',
+              title: '标签',
+            },
+            {
+              key: 'progress',
+              type: 'progress',
+              title: '开发进度',
+            },
+            {
+              key: 'wordCount',
+              type: 'dynamic',
+              title: '字数',
+              options: {
+                type: 'wordsCount',
+              },
+            },
+            {
+              key: 'readingTime',
+              type: 'dynamic',
+              title: '阅读时间',
+              options: {
+                type: 'readingTime',
+                dateFnsLocaleName: 'zhCN',
+              },
+            },
+          ],
         },
-      },
-      spotlight: {
-        defaultToggle: true,
-        defaultStyle: SpotlightStyle.Aside
-      }
-    } as InjectionKeyOptions)
-    app.use(NolebasePagePropertiesPlugin(), {
-      properties: {
-        'zh-CN': [
-          {
-            key: 'tags',
-            type: 'tags',
-            title: '标签',
+      } as Options<DynamicProperty>)
+      .provide(InjectionKey, {
+        layoutSwitch: {
+          disableHelp: true,
+          defaultMode: LayoutMode.Original,
+          contentLayoutMaxWidth: {
+            defaultMaxWidth: 100
           },
-          {
-            key: 'progress',
-            type: 'progress',
-            title: '开发进度',
-          },
-          {
-            key: 'wordCount',
-            type: 'dynamic',
-            title: '字数',
-            options: {
-              type: 'wordsCount',
-            },
-          },
-          {
-            key: 'readingTime',
-            type: 'dynamic',
-            title: '阅读时间',
-            options: {
-              type: 'readingTime',
-              dateFnsLocaleName: 'zhCN',
-            },
-          },
-        ],
-      },
-    } as Options<DynamicProperty>)
-
+        },
+        spotlight: {
+          defaultToggle: true,
+          defaultStyle: SpotlightStyle.Aside
+        }
+      } as InjectionKeyOptions)
   },
 } satisfies Theme

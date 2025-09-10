@@ -1,5 +1,5 @@
 <script setup>
-import '../style.css'
+import '../style.scss'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 
