@@ -7,7 +7,7 @@ import {withI18n} from 'vitepress-i18n';
 import {withPwa} from "@vite-pwa/vitepress";
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
 
-const basePath = '/api-doc/'
+const basePath = '/'
 const title = "落月API";
 const description = "介绍";
 
@@ -22,7 +22,7 @@ const vitePressConfig = (env): UserConfig => {
       ...env
     },
     sitemap: {
-      hostname: 'https://doc.vkeys.cn/api-doc/'
+      hostname: 'https://doc.vkeys.cn/'
     },
     metaChunk: true,
     // mpa: true,
